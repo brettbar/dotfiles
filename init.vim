@@ -13,15 +13,22 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdtree'
 Plug 'mbbill/undotree'
 Plug 'ahonn/resize.vim'
-Plug 'junegunn/fzf'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-symbols.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ErichDonGubler/vim-sublime-monokai'
 
 call plug#end()
 
 
 
 "let g:airline_theme=''
-let ayucolor="mirage"
-colorscheme ayu
+"let ayucolor="mirage"
+"colorscheme ayu
+set background=dark
+colorscheme sublimemonokai
 
 highlight clear SignColumn
 highlight clear StatusLine

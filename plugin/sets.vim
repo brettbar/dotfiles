@@ -1,6 +1,6 @@
 set encoding=UTF-8
 set exrc
-set guicursor=
+"set guicursor=
 set nu
 set relativenumber
 set nohlsearch
@@ -26,4 +26,4 @@ set shortmess+=c
 set termguicolors
 set splitbelow
 set splitright
-
+set mouse=a

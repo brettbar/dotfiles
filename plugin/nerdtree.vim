@@ -10,5 +10,5 @@ if exists('g:loaded_webdevicons')
     call webdevicons#refresh()
 endif
 
-autocmd VimEnter * NERDTree | wincmd p
+"autocmd VimEnter * NERDTree | wincmd p
 
