@@ -19,6 +19,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-symbols.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ErichDonGubler/vim-sublime-monokai'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 call plug#end()
 
@@ -26,13 +27,13 @@ call plug#end()
 
 "let g:airline_theme=''
 "let ayucolor="mirage"
-"colorscheme ayu
+colorscheme ayu
 set background=dark
-colorscheme sublimemonokai
+"colorscheme sublimemonokai
 
 highlight clear SignColumn
 highlight clear StatusLine
-highlight Normal guibg=none
+"highlight Normal guibg=none
 
 
 let loaded_matchparen = 1

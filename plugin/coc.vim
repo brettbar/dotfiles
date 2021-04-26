@@ -7,11 +7,14 @@ let g:coc_global_extensions = [
  \ 'coc-prettier', 
  \ 'coc-json', 
  \ 'coc-clangd',
+ \ 'coc-python'
  \ ]
 
 
 " Remap for rename current word
 nnoremap <leader>rn <Plug>(coc-rename)
+
+nnoremap <leader>fs :CocCommand clangd.switchSourceHeader<cr>
 
 " Remap for format selected region
 vmap <leader>f  <Plug>(coc-format-selected)
