@@ -20,6 +20,7 @@ Plug 'nvim-telescope/telescope-symbols.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'psliwka/vim-smoothie'
 
 call plug#end()
 
