@@ -6,7 +6,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ayu-theme/ayu-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -18,19 +17,23 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-symbols.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'psliwka/vim-smoothie'
+Plug 'pangloss/vim-javascript'
 
+Plug 'ErichDonGubler/vim-sublime-monokai'
+Plug 'ayu-theme/ayu-vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 
 
 "let g:airline_theme=''
 "let ayucolor="mirage"
-colorscheme ayu
 set background=dark
+colorscheme ayu
 "colorscheme sublimemonokai
+"colorscheme gruvbox
 
 highlight clear SignColumn
 highlight clear StatusLine

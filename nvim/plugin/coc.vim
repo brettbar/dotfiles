@@ -7,7 +7,8 @@ let g:coc_global_extensions = [
  \ 'coc-prettier', 
  \ 'coc-json', 
  \ 'coc-clangd',
- \ 'coc-python'
+ \ 'coc-python',
+ \ 'coc-highlight'
  \ ]
 
 
