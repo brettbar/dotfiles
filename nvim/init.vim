@@ -22,8 +22,7 @@ Plug 'psliwka/vim-smoothie'
 Plug 'pangloss/vim-javascript'
 
 Plug 'ErichDonGubler/vim-sublime-monokai'
-Plug 'ayu-theme/ayu-vim'
-Plug 'morhetz/gruvbox'
+Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
 
@@ -31,14 +30,12 @@ call plug#end()
 "let g:airline_theme=''
 "let ayucolor="mirage"
 set background=dark
-colorscheme ayu
-"colorscheme sublimemonokai
-"colorscheme gruvbox
+colorscheme sierra
 
 highlight clear SignColumn
 highlight clear StatusLine
-"highlight Normal guibg=none
-
+highlight Normal guibg=NONE ctermbg=NONE
+highlight LineNr guibg=NONE
 
 let loaded_matchparen = 1
 let mapleader = " "
