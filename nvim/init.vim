@@ -36,6 +36,7 @@ highlight clear SignColumn
 highlight clear StatusLine
 highlight Normal guibg=NONE ctermbg=NONE
 highlight LineNr guibg=NONE
+highlight ColorColumn guibg=#222222
 
 let loaded_matchparen = 1
 let mapleader = " "
