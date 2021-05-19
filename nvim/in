@@ -26,6 +26,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
 
+
 "let g:airline_theme=''
 "let ayucolor="mirage"
 "set background=light
@@ -47,10 +48,10 @@ augroup END
 let loaded_matchparen = 1
 let mapleader = " "
 
-"set noshowmode
-"set noruler
-"set laststatus=0
-"set noshowcmd
+set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
 
         
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
@@ -70,15 +71,19 @@ nnoremap <C-J> :ResizeDown<CR>
 nnoremap <C-K> :ResizeUp<CR>
 nnoremap <C-L> :ResizeLeft<CR>
 
-function ForceFoldmethodIndent()
-    if &foldenable
-        se foldmethod=indent
-    endif
-endfunction
+
 
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 
 
 inoremap <C-c> <esc>
 
+
+
+
+
+
+set noshowmode  " to get rid of thing like --INSERT--
+set noshowcmd  " to get rid of display of last command
+set shortmess+=F  " to get rid of the file name displayed in the command line bar
 

@@ -3,38 +3,45 @@ env:
 
 window:
         padding:
-                x: 5
-                y: 5
+                x: 0
+                y: 0
+        dynamic_padding: true
+        decorations: none
+
 background_opacity: 0.8
 
-
 font:
-        size: 14
+        size: 16
         normal:
             family: Consolas NF #windows like
             #family: JetBrainsMono Nerd Font Mono #jetbrains
             #family: BitstreamVeraSansMono Nerd Font Mono #mac like
                 
+# Colors (Ayu Dark)
 colors:
-        primary:
-            background: '#121212'
-            #foreground: '#ffffff'
-            #normal:
-            #black: '#6c6b6b'
-            #red: '#d75e5e'
-            #green: '#afd7d7'
-            #yellow: '#dfae86'
-            #blue: '#dfdfde'
-            #magenta: '#af5e5e'
-            #cyan: '#ffafaf'
-            #white: '#ffffff'
+  # Default colors
+  primary:
+    background: '#121212'
+    foreground: '#B3B1AD'
 
-            #bright:
-            #    black: '#252525'
-            #    red: '#d75e5e'
-            #    green: '#afd7d7'
-            #    yellow: '#dfae86'
-            #    blue: '#dfdfde'
-            #    magenta: '#af5e5e'
-            #    cyan: '#ffafaf'
-            #    white: '#ffffff'
+  # Normal colors
+  normal:
+    black: '#01060E'
+    red: '#EA6C73'
+    green: '#91B362'
+    yellow: '#F9AF4F'
+    blue: '#53BDFA'
+    magenta: '#FAE994'
+    cyan: '#90E1C6'
+    white: '#C7C7C7'
+
+  # Bright colors
+  bright:
+    black: '#686868'
+    red: '#F07178'
+    green: '#C2D94C'
+    yellow: '#FFB454'
+    blue: '#59C2FF'
+    magenta: '#FFEE99'
+    cyan: '#95E6CB'
+    white: '#FFFFFF'

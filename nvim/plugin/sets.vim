@@ -20,10 +20,11 @@ set scrolloff=8
 set noshowmode
 set signcolumn=yes
 set colorcolumn=80
-set cmdheight=2
+"set cmdheight=2
 set updatetime=50
 set shortmess+=c
 set termguicolors
 set splitbelow
 set splitright
 set mouse=a
+set clipboard=unnamedplus
