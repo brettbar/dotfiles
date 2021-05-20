@@ -37,7 +37,7 @@ colorscheme sierra
 
 highlight Normal guibg=NONE ctermbg=NONE guifg=#aaaaaa
 highlight LineNr guibg=NONE
-highlight ColorColumn guibg=#222222
+highlight ColorColumn guibg=#111111
 
 augroup cmdline
     autocmd!
