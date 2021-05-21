@@ -32,12 +32,12 @@ call plug#end()
 "colorscheme one
 
 set background=dark
-let g:sierra_Pitch = 1
+let g:sierra_Sunset = 1
 colorscheme sierra
 
-highlight Normal guibg=NONE ctermbg=NONE guifg=#aaaaaa
+highlight! Normal guibg=NONE guifg=#B3B1AD
 highlight LineNr guibg=NONE
-highlight ColorColumn guibg=#111111
+highlight ColorColumn guibg=NONE
 
 augroup cmdline
     autocmd!
