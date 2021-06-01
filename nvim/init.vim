@@ -20,20 +20,21 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'psliwka/vim-smoothie'
 Plug 'pangloss/vim-javascript'
+Plug 'dhruvasagar/vim-dotoo'
 
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
 
-"let g:airline_theme=''
+let g:airline_theme='sierra'
 "let ayucolor="mirage"
 "set background=light
 "colorscheme one
 
 set background=dark
-let g:sierra_Sunset = 1
-colorscheme sierra
+let g:siena_Sunset = 1
+colorscheme siena
 
 highlight! Normal guibg=NONE guifg=#B3B1AD
 highlight LineNr guibg=NONE

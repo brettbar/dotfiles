@@ -118,7 +118,8 @@ fi
 
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
-export PATH=$GOPATH/bin:$GOROOT/bin:/opt/nvim-linux64/bin:$PATH
+export PATH=$GOPATH/bin:$GOROOT/bin:/opt/nvim-linux64/bin:/usr/local/bin/nvim/bin:$PATH
 
-alias nv=$HOME/work/wasm-sdk/scripts/nvim.sh
+alias nv=$HOME/dotfiles/nvim.sh
+alias ww="cd $HOME/work/wasm-sdk/"
 force_color_prompt=yes
