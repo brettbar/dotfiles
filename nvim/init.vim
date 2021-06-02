@@ -20,10 +20,15 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'psliwka/vim-smoothie'
 Plug 'pangloss/vim-javascript'
-Plug 'dhruvasagar/vim-dotoo'
-
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'preservim/nerdcommenter'
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'rafi/awesome-vim-colorschemes'
+
 call plug#end()
 
 
@@ -31,6 +36,7 @@ let g:airline_theme='sierra'
 "let ayucolor="mirage"
 "set background=light
 "colorscheme one
+let g:vim_markdown_new_list_item_indent = 1
 
 set background=dark
 let g:siena_Sunset = 1
@@ -38,7 +44,7 @@ colorscheme siena
 
 highlight! Normal guibg=NONE guifg=#B3B1AD
 highlight LineNr guibg=NONE
-highlight ColorColumn guibg=NONE
+highlight ColorColumn guibg=#151515
 
 augroup cmdline
     autocmd!
@@ -52,6 +58,7 @@ let mapleader = " "
 "set noruler
 "set laststatus=0
 "set noshowcmd
+set nofoldenable
 
         
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
