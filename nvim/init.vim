@@ -37,12 +37,15 @@ let g:airline_theme='sierra'
 "set background=light
 "colorscheme one
 let g:vim_markdown_new_list_item_indent = 1
+let g:notes_tab_indents = 0
 
 set background=dark
 let g:siena_Sunset = 1
 colorscheme siena
 
 highlight! Normal guibg=NONE guifg=#B3B1AD
+"highlight! Normal guibg=#191919 guifg=#B3B1AD
+
 highlight LineNr guibg=NONE
 highlight ColorColumn guibg=#151515
 

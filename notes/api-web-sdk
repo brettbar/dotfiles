@@ -24,18 +24,13 @@ api-web-sdk
      to backend
    • Once users post back has been processed sent and handled from the sdk, this
      file will handle sending the response for the original http request
-• backend.go
-   • Takes the request from the api, uses the unique user-identifier to check 
+   • Uses the unique user-identifier to check 
      with the database if that user already exists, or is a new user
    • Will receive user state from database if user already exists, otherwise it
      will create a new user in the database.
    • Performs CRUD with the database
    • Parses the request for the postback, sends the user-id and postback to 
      the sdk
-• mongodb database
-   • Stores a simple relation, with user-id as the primary key
-   • Each user-id is associated with various fields, representing peristed sdk 
-   • state
 • sdk.go
    • Contains a series of workers, that are spun down by default
    • When a new post back and user-id are received from the backend:
@@ -48,5 +43,7 @@ api-web-sdk
          4. prepare the response body
          5. send the response payload back to the api.go to be sent as a 
             response to the users original request
-
-
+• mongodb database
+   • Stores a simple relation, with user-id as the primary key
+   • Each user-id is associated with various fields, representing peristed sdk 
+   • state

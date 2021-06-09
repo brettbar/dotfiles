@@ -1,0 +1,37 @@
+notes
+
+# Notes
+
+## Build notes
+    1. docker-compose up -d
+    2. make
+    3. make && xdg-open http://localhost:8080/
+    4. docker-compose logs -f --tail=1
+
+## Docker notes
+    * docker-compose logs --help
+      View output from containers.
+      Usage: logs [options] [--] [SERVICE...]
+      Options:
+          --no-color              Produce monochrome output.
+          -f, --follow            Follow log output.
+          -t, --timestamps        Show timestamps.
+          --tail="all"            Number of lines to show from the end of the logs
+                                  for each container.
+          --no-log-prefix         Don't print prefix in logs.
+    * docker-compose down // spin down container
+
+
+
+
+To get started enter a title for your note above. When you’re ready to save
+your note just use Vim’s :write or :update commands, a filename will be picked
+automatically based on the title.
+
+                                    * * *
+
+The notes plug-in comes with self hosting documentation. To jump to these notes
+position your cursor on the highlighted name and press ‘gf’ in normal mode:
+
+ • Note taking syntax
+ • Note taking commands
