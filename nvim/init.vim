@@ -4,22 +4,28 @@ filetype plugin on
 filetype indent on
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'fatih/vim-go'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdtree'
 Plug 'mbbill/undotree'
 Plug 'ahonn/resize.vim'
+
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-symbols.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
-Plug 'psliwka/vim-smoothie'
+
+Plug 'fatih/vim-go'
+Plug 'dart-lang/dart-vim-plugin'
 Plug 'pangloss/vim-javascript'
+
+Plug 'psliwka/vim-smoothie'
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -29,7 +35,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'fcpg/vim-fahrenheit'
-Plug 'dart-lang/dart-vim-plugin'
 
 call plug#end()
 
@@ -110,57 +115,12 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 lua << EOF
-require('telescope').setup{
-  defaults = {
-    vimgrep_arguments = {
-      'rg',
-      '--color=never',
-      '--no-heading',
-      '--with-filename',
-      '--line-number',
-      '--column',
-      '--smart-case'
-    },
-    prompt_position = "bottom",
-    prompt_prefix = "> ",
-    selection_caret = "> ",
-    entry_prefix = "  ",
-    initial_mode = "insert",
-    selection_strategy = "reset",
-    sorting_strategy = "descending",
-    layout_strategy = "horizontal",
-    layout_defaults = {
-      horizontal = {
-        mirror = false,
-      },
-      vertical = {
-        mirror = false,
-      },
-    },
-    find_files = {
-        theme = "dropdown"
-    },
-    file_sorter =  require'telescope.sorters'.get_fuzzy_file,
-    file_ignore_patterns = {"*internal/.*"},
-    generic_sorter =  require'telescope.sorters'.get_generic_fuzzy_sorter,
-    shorten_path = true,
-    winblend = 0,
-    width = 0.75,
-    preview_cutoff = 120,
-    results_height = 1,
-    results_width = 0.8,
-    border = {},
-    borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' },
-    color_devicons = true,
-    use_less = true,
-    set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
-    file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
-    grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
-    qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
-
-    -- Developer configurations: Not meant for general override
-    buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
-  }
-}
+require'lspconfig'.gopls.setup{}
 EOF
+
+"source ~/.config/nvim/plugin/nerdtree.vim
+"source ~/.config/nvim/plugin/telescope.vim
+source ~/.config/nvim/plugin/lsp-config.vim
+source ~/.config/nvim/plugin/compe-config.vim
+"source ~/.config/nvim/plugin/golang.vim
 
