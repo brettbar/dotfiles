@@ -15,6 +15,7 @@ return require('packer').startup(function()
     use { 'nvim-lua/completion-nvim' }
     use { 'hrsh7th/nvim-compe' }
     use { 'jackguo380/vim-lsp-cxx-highlight' }
+    use { 'cohama/lexima.vim' }
   
     -- Language plugins
     use { 'tjdevries/nlua.nvim' }

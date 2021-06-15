@@ -76,6 +76,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes"
   },
+  ["completion-nvim"] = {
+    loaded = true,
+    path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/completion-nvim"
+  },
   ["dart-vim-plugin"] = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/dart-vim-plugin"
