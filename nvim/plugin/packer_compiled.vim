@@ -76,10 +76,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes"
   },
-  ["completion-nvim"] = {
-    loaded = true,
-    path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/completion-nvim"
-  },
   ["dart-vim-plugin"] = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/dart-vim-plugin"
@@ -99,6 +95,10 @@ _G.packer_plugins = {
   ["nvim-compe"] = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/nvim-compe"
+  },
+  ["nvim-lsp-ts-utils"] = {
+    loaded = true,
+    path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/nvim-lsp-ts-utils"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

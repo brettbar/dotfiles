@@ -48,5 +48,5 @@ return require('packer').startup(function()
     use { 'rafi/awesome-vim-colorschemes' }
     use { 'fcpg/vim-fahrenheit' }
 
-  
+    use { 'jose-elias-alvarez/nvim-lsp-ts-utils' }
   end)

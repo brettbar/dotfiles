@@ -9,22 +9,6 @@ nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
 " auto-format
+autocmd BufWritePre *.ts lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
-autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)
-autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.go lua vim.lsp.buf.formatting_sync(nil, 100)
-
-
-
-"lua << EOF
-"vim.lsp.set_log_level("debug")
-"require'lspconfig'.gopls.setup{}
-"require'lspconfig'.tsserver.setup{}
-"Commands:
-
-"Default Values:
-    "cmd = { "typescript-language-server", "--stdio" }
-    "filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" }
-    "root_dir = root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git")
-"EOF
-
