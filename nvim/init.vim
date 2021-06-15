@@ -55,6 +55,9 @@ colorscheme siena
 
 "colorscheme gruvbox
 
+autocmd Filetype tex LanguageToolSetUp
+autocmd Filetype md LanguageToolSetUp
+
 highlight! Normal guibg=NONE guifg=#B3B1AD
 "highlight! Normal guifg=#B3B1AD
 "highlight! Normal guibg=#191919 guifg=#B3B1AD
