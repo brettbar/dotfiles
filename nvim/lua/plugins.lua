@@ -23,6 +23,9 @@ return require('packer').startup(function()
     use { 'dart-lang/dart-vim-plugin' }
     use { 'pangloss/vim-javascript' }
     use { 'plasticboy/vim-markdown' }
+    use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
+
+
   
     -- Vim dispatch
     use { 'tpope/vim-dispatch' }

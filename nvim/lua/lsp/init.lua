@@ -1,5 +1,6 @@
 local nvim_lsp = require("lspconfig")
 
+require("flutter-tools").setup{}
 nvim_lsp.gopls.setup{}
 
 nvim_lsp.tsserver.setup{
