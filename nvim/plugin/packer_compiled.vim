@@ -84,6 +84,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/dart-vim-plugin"
   },
+  ["lexima.vim"] = {
+    loaded = true,
+    path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/lexima.vim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
+  },
   nerdcommenter = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/nerdcommenter"
