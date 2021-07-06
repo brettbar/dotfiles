@@ -1,7 +1,9 @@
 local nvim_lsp = require("lspconfig")
-
+local map = require("utils").map
 require("flutter-tools").setup{}
+
 nvim_lsp.gopls.setup{}
+nvim_lsp.clangd.setup{}
 
 nvim_lsp.tsserver.setup{
     on_attach = function(client, bufnr)
@@ -42,13 +44,60 @@ nvim_lsp.tsserver.setup{
         ts_utils.setup_client(client)
 
         -- no default maps, so you may want to define some here
-        vim.api.nvim_buf_set_keymap(bufnr, "n", "gs", ":TSLspOrganize<CR>", {silent = true})
-        vim.api.nvim_buf_set_keymap(bufnr, "n", "qq", ":TSLspFixCurrent<CR>", {silent = true})
-        vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", ":TSLspRenameFile<CR>", {silent = true})
-        vim.api.nvim_buf_set_keymap(bufnr, "n", "gi", ":TSLspImportAll<CR>", {silent = true})
+        --vim.api.nvim_buf_set_keymap(bufnr, "n", "gs", ":TSLspOrganize<CR>", {silent = true})
+        --vim.api.nvim_buf_set_keymap(bufnr, "n", "qq", ":TSLspFixCurrent<CR>", {silent = true})
+        --vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", ":TSLspRenameFile<CR>", {silent = true})
+        --vim.api.nvim_buf_set_keymap(bufnr, "n", "gi", ":TSLspImportAll<CR>", {silent = true})
     end
 
 }
 
+map('n','gd','<cmd>lua vim.lsp.buf.definition()<CR>')
+map('n','gD','<cmd>lua vim.lsp.buf.declaration()<CR>')
+map('n','gr','<cmd>lua vim.lsp.buf.references()<CR>')
+map('n','gi','<cmd>lua vim.lsp.buf.implementation()<CR>')
+map('n','K','<cmd>lua vim.lsp.buf.hover()<CR>')
+map('n','gs','<cmd>lua vim.lsp.buf.signature_help()<CR>')
+map('n','gp','<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>')
+map('n','gn','<cmd>lua vim.lsp.diagnostic.goto_next()<CR>')
+
+map('n','<leader>gw','<cmd>lua vim.lsp.buf.document_symbol()<CR>')
+map('n','<leader>gW','<cmd>lua vim.lsp.buf.workspace_symbol()<CR>')
+map('n','<leader>ah','<cmd>lua vim.lsp.buf.hover()<CR>')
+map('n','<leader>gc','<cmd>lua vim.lsp.buf.code_action()<CR>')
+map('n','<leader>ee','<cmd>lua vim.lsp.util.show_line_diagnostics()<CR>')
+map('n','<leader>gR','<cmd>lua vim.lsp.buf.rename()<CR>')
+map('n','<leader>=', '<cmd>lua vim.lsp.buf.formatting()<CR>')
+map('n','<leader>ai','<cmd>lua vim.lsp.buf.incoming_calls()<CR>')
+map('n','<leader>ao','<cmd>lua vim.lsp.buf.outgoing_calls()<CR>')
+
+--map('n','gd','<cmd>:Lspsaga preview_definition<CR>')
+--map('n', 'gh', '<cmd>:Lspsaga lsp_finder<CR>')
+--map('n', '<leader>gc', '<cmd>:Lspsaga code_action<CR>')
+--map('n', '<leader>gc', '<cmd>:Lspsaga range_code_action<CR>')
+--map('n','K','<cmd>:Lspsaga hover_doc<CR>')
+--map('n', '<C-f>', '<cmd>lua require(\'lspsaga.action\').smart_scroll_with_saga(1)<CR>')
+--map('n', '<C-b>', '<cmd>lua require(\'lspsaga.action\').smart_scroll_with_saga(-1)<CR>')
+--map('n','gs','<cmd>:Lspsaga signature_help<CR>')
+--map('n','gR','<cmd>:Lspsaga rename<CR>')
+--map('n','gp','<cmd>:Lspsaga diagnostic_jump_prev<CR>')
+--map('n','gn','<cmd>:Lspsaga diagnostic_jump_next<CR>')
 
 
+--" LSP config (the mappings used in the default file don't quite work right)
+--nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
+--nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
+--nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+--nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>
+--nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
+--nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
+--nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+--nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+
+--" auto-format
+--autocmd BufWritePre *.ts lua vim.lsp.buf.formatting_sync(nil, 100)
+--autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
+--autocmd BufWritePre *.go lua vim.lsp.buf.formatting_sync(nil, 100)
+
+
+--map('n', '<Leader>gs', '<cmd>Gstatus<CR>')  -- Git status

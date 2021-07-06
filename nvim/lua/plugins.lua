@@ -16,6 +16,7 @@ return require('packer').startup(function()
     use { 'hrsh7th/nvim-compe' }
     use { 'jackguo380/vim-lsp-cxx-highlight' }
     use { 'cohama/lexima.vim' }
+    --use { 'glepnir/lspsaga.nvim' }
   
     -- Language plugins
     use { 'tjdevries/nlua.nvim' }
@@ -24,8 +25,9 @@ return require('packer').startup(function()
     use { 'pangloss/vim-javascript' }
     use { 'plasticboy/vim-markdown' }
     use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
-
-
+    use { 'jose-elias-alvarez/nvim-lsp-ts-utils' }
+    use { 'octol/vim-cpp-enhanced-highlight' }
+    use { 'vimwiki/vimwiki' }
   
     -- Vim dispatch
     use { 'tpope/vim-dispatch' }
@@ -45,12 +47,10 @@ return require('packer').startup(function()
     use { 'mbbill/undotree' }
     use { 'ahonn/resize.vim' }
     use { 'psliwka/vim-smoothie' }
-    use { 'xolox/vim-notes' }
     use { 'xolox/vim-misc' }
     use { 'preservim/nerdcommenter' }
     use { 'ErichDonGubler/vim-sublime-monokai' }
     use { 'rafi/awesome-vim-colorschemes' }
     use { 'fcpg/vim-fahrenheit' }
 
-    use { 'jose-elias-alvarez/nvim-lsp-ts-utils' }
   end)
