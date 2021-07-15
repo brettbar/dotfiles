@@ -2,6 +2,7 @@ local nvim_lsp = require("lspconfig")
 local map = require("utils").map
 require("flutter-tools").setup{}
 
+
 nvim_lsp.gopls.setup{}
 nvim_lsp.clangd.setup{}
 
@@ -49,8 +50,9 @@ nvim_lsp.tsserver.setup{
         --vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", ":TSLspRenameFile<CR>", {silent = true})
         --vim.api.nvim_buf_set_keymap(bufnr, "n", "gi", ":TSLspImportAll<CR>", {silent = true})
     end
-
 }
+
+vim.lsp.diagnostic["textDocument/publishDiagnostics"] = function() end
 
 --map('n','gd','<cmd>lua vim.lsp.buf.definition()<CR>')
 --map('n','gD','<cmd>lua vim.lsp.buf.declaration()<CR>')

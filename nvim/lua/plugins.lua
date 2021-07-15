@@ -52,5 +52,7 @@ return require('packer').startup(function()
     use { 'ErichDonGubler/vim-sublime-monokai' }
     use { 'rafi/awesome-vim-colorschemes' }
     use { 'fcpg/vim-fahrenheit' }
+    use { 'KabbAmine/vCoolor.vim' }
+    use { 'ap/vim-css-color' }
 
   end)

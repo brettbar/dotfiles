@@ -3,15 +3,16 @@ env:
 
 window:
         padding:
-                x: 0
+                x: 4
                 y: 0
-        dynamic_padding: true
         decorations: none
+        #dynamic_padding: true
+        
 
-background_opacity: 0.8
+background_opacity: 0.7
 
 font:
-        size: 17
+        size: 14
         normal:
             family: Consolas NF #windows like
             #family: JetBrainsMono Nerd Font Mono #jetbrains
@@ -20,56 +21,39 @@ font:
 colors:
   # Default colors
   primary:
-    background: '0x222222'
+    #background: '0x262626'
+    background: '0x000000'
+    #background: '0x111111'
     foreground: '0xB3B1AD'
 
-  # Normal colors
   normal:
-    black:   '0x303030'
-    red:     '0xc10023'
-    green:   '0xa83334'
-    yellow:  '0xb51d2c'
-    blue:    '0x8c4b46'
-    magenta: '0x7d534f'
-    cyan:    '0x9a413d'
-    white:   '0xc6c6c6'
+    black: '#303030'
+    red: '#D75F5F'
+    green: '#FFA155'
+    yellow: '#FFA095'
+    blue: '#875F5F'
+    magenta: '#C97E7E'
+    cyan:    '#9a413d'
+    white:   '#c6c6c6'
+  # Normal colors
+  #normal:
+    #black:   '#303030'
+    #red:     '#c10023'
+    #green:   '#a83334'
+    #yellow:  '#b51d2c'
+    #blue:    '#8c4b46'
+    #magenta: '#7d534f'
+    #cyan:    '#9a413d'
+    #white:   '#c6c6c6'
 
   # Bright colors
-  bright:
-    black:   '0x5e5e5e'
-    red:     '0xff8781'
-    green:   '0xffa095'
-    yellow:  '0xff948b'
-    blue:    '0xfeb2aa'
-    magenta: '0xebbbb5'
-    cyan:    '0xffaaa0'
-    white:   '0xffffff'
+  #bright:
+    #black:   '#5E5E5E'
+    #red:     '#FF8781'
+    #green:   '#FFA095'
+    #yellow:  '#FF948B'
+    #blue:    '#FEB2AA'
+    #magenta: '#EBBBB5'
+    #cyan:    '#FFAAA0'
+    #white:   '#FFFFFF'
 
-            ## Colors (Ayu Dark)
-            #colors:
-            #  # Default colors
-            #  primary:
-            #    background: '#222222'
-            #    foreground: '#B3B1AD'
-            #
-            #  # Normal colors
-            #  normal:
-            #    black: '#01060E'
-            #    red: '#EA6C73'
-            #    green: '#91B362'
-            #    yellow: '#F9AF4F'
-            #    blue: '#53BDFA'
-            #    magenta: '#FAE994'
-            #    cyan: '#90E1C6'
-            #    white: '#C7C7C7'
-            #
-            #  # Bright colors
-            #  bright:
-            #    black: '#686868'
-            #    red: '#F07178'
-            #    green: '#C2D94C'
-            #    yellow: '#FFB454'
-            #    blue: '#59C2FF'
-            #    magenta: '#FFEE99'
-            #    cyan: '#95E6CB'
-            #    white: '#FFFFFF'

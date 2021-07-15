@@ -7,7 +7,7 @@ end
 
 vim.api.nvim_command('packadd packer.nvim')
 
-local no_errors = pcall(function()
+local no_errors, error_msg = pcall(function()
 
   local time
   local profile_info
@@ -150,6 +150,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/undotree"
   },
+  ["vCoolor.vim"] = {
+    loaded = true,
+    path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/vCoolor.vim"
+  },
   ["vim-airline"] = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/vim-airline"
@@ -161,6 +165,10 @@ _G.packer_plugins = {
   ["vim-cpp-enhanced-highlight"] = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/vim-cpp-enhanced-highlight"
+  },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/vim-css-color"
   },
   ["vim-devicons"] = {
     loaded = true,
@@ -218,5 +226,5 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
-  vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: ".v:exception | echom "Please check your config for correctness" | echohl None')
+  vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end
