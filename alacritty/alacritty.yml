@@ -9,7 +9,7 @@ window:
         #dynamic_padding: true
         
 
-background_opacity: 0.7
+background_opacity: 0.75
 
 font:
         size: 14
@@ -30,7 +30,17 @@ colors:
     black: '#303030'
     red: '#D75F5F'
     green: '#FFA155'
-    yellow: '#FFA095'
+    yellow: '#FF5555'
+    blue: '#875F5F'
+    magenta: '#C97E7E'
+    cyan:    '#9a413d'
+    white:   '#c6c6c6'
+
+  bright:
+    black: '#303030'
+    red: '#D75F5F'
+    green: '#FFA155'
+    yellow: '#FF5555'
     blue: '#875F5F'
     magenta: '#C97E7E'
     cyan:    '#9a413d'
