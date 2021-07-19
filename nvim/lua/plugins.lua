@@ -55,4 +55,7 @@ return require('packer').startup(function()
     use { 'KabbAmine/vCoolor.vim' }
     use { 'ap/vim-css-color' }
 
+    -- Colorschemes
+    use { 'ldelossa/vimdark' }
+
   end)

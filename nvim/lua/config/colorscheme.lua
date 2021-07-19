@@ -1,4 +1,6 @@
 vim.cmd 'colorscheme siena'
+--vim.cmd 'colorscheme vimlight'
+--vim.cmd 'set background=light'
 
 vim.cmd 'highlight! Normal guibg=NONE'
 vim.cmd 'highlight! LineNr guibg=NONE'
