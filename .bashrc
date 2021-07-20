@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+#set editing-mode vi
+#set -o vi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -118,14 +121,10 @@ fi
 
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
-export PATH=$GOPATH/bin:$GOROOT/bin:/opt/nvim-linux64/bin:/usr/local/bin/nvim/bin:$PATH
+export PATH=$GOPATH/bin:$GOROOT/bin:/opt/nvim/bin:/usr/local/bin/nvim/bin:/opt/flutter/bin:$PATH
 
+alias f=fzf
+alias v=nvim
 alias nv=$HOME/dotfiles/nvim.sh
-alias ww="cd $GOROOT/src/github.com/Kochava/web-sdk-v3/"
+alias ww="cd $GOROOT/src/github.com/Kochava/web-sdk-v3"
 force_color_prompt=yes
-
-alias luamake=/home/bbarinaga/Downloads/lua-language-server/3rd/luamake/luamake
-alias notecopy=
-    cp ~/.local/share/nvim/site/pack/packer/start/vim-notes/misc/notes/user/todo ~/work/wasm-sdk/notes/todo && 
-    cp ~/.local/share/nvim/site/pack/packer/start/vim-notes/misc/notes/user/notes ~/work/wasm-sdk/notes/notes
- 
