@@ -40,7 +40,7 @@
 ;alert = #bd2c40
 
 background = #BF111111
-background-alt = #303030
+background-alt = #BF303030
 foreground = #B3B1AD
 foreground-alt = #555
 primary = #FFA155
@@ -48,7 +48,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:HDMI-0}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -150,7 +150,7 @@ label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
 ; Separator in between workspaces
-; label-separator = |
+label-separator = |
 
 [module/i3]
 type = internal/i3
