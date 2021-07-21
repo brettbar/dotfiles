@@ -79,10 +79,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+| split h
+bindsym $mod+v split h
 
 # split in vertical orientation
-bindsym $mod+_ split v
+bindsym $mod+x split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -176,6 +176,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bindsym $mod+b exec firefox &
+
+bindsym $mod+Escape exec betterlockscreen -l dim
 
 # Theme colors
 # class                   border  backgr. text    indic.  child_border
