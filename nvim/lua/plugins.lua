@@ -39,11 +39,15 @@ return require('packer').startup(function()
     use { 'vim-airline/vim-airline' }
     use { 'vim-airline/vim-airline-themes' }
 
-    -- Nerdtree
-    use { 'ryanoasis/vim-devicons' }
-    use { 'preservim/nerdtree' }
+    -- nvim-tree
     use { 'kyazdani42/nvim-web-devicons' }
+    use { 'kyazdani42/nvim-tree.lua' }
+    --
+    --use { 'ryanoasis/vim-devicons' }
+    --use { 'preservim/nerdtree' }
 
+
+    use { 'ray-x/lsp_signature.nvim' }
     use { 'mbbill/undotree' }
     use { 'ahonn/resize.vim' }
     use { 'psliwka/vim-smoothie' }

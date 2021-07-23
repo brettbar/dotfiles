@@ -2,7 +2,7 @@ local nvim_lsp = require("lspconfig")
 local map = require("utils").map
 require("flutter-tools").setup{}
 
-
+require("lsp_signature").setup()
 nvim_lsp.gopls.setup{}
 nvim_lsp.clangd.setup{}
 

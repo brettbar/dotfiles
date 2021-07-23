@@ -89,6 +89,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/lexima.vim"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim"
+  },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
@@ -96,10 +100,6 @@ _G.packer_plugins = {
   nerdcommenter = {
     loaded = true,
     path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/nerdcommenter"
-  },
-  nerdtree = {
-    loaded = true,
-    path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/nerdtree"
   },
   ["nlua.nvim"] = {
     loaded = true,
@@ -116,6 +116,14 @@ _G.packer_plugins = {
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-toggleterm.lua"] = {
+    loaded = true,
+    path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/nvim-toggleterm.lua"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -169,10 +177,6 @@ _G.packer_plugins = {
   ["vim-css-color"] = {
     loaded = true,
     path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/vim-css-color"
-  },
-  ["vim-devicons"] = {
-    loaded = true,
-    path = "/home/brettbar/.local/share/nvim/site/pack/packer/start/vim-devicons"
   },
   ["vim-dispatch"] = {
     loaded = true,

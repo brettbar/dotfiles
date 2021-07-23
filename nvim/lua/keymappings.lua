@@ -15,4 +15,3 @@ map('', '<C-J>', '<cmd>:ResizeDown<CR>', options)
 map('', '<C-K>', '<cmd>:ResizeUp<CR>', options)
 map('', '<C-L>', '<cmd>:ResizeLeft<CR>', options)
 map('', '<C-c>', '<esc>', options)
-
