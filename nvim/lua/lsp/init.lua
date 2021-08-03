@@ -54,7 +54,7 @@ nvim_lsp.tsserver.setup{
 
 vim.lsp.diagnostic["textDocument/publishDiagnostics"] = function() end
 
---map('n','gd','<cmd>lua vim.lsp.buf.definition()<CR>')
+map('n','gD','<cmd>lua vim.lsp.buf.definition()<CR>')
 --map('n','gD','<cmd>lua vim.lsp.buf.declaration()<CR>')
 --map('n','gr','<cmd>lua vim.lsp.buf.references()<CR>')
 --map('n','gi','<cmd>lua vim.lsp.buf.implementation()<CR>')

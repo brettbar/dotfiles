@@ -15,3 +15,21 @@ map('', '<C-J>', '<cmd>:ResizeDown<CR>', options)
 map('', '<C-K>', '<cmd>:ResizeUp<CR>', options)
 map('', '<C-L>', '<cmd>:ResizeLeft<CR>', options)
 map('', '<C-c>', '<esc>', options)
+
+map('', 'Y', 'y$', options)
+map('', 'n', 'nzzzv', options)
+map('', 'N', 'Nzzzv', options)
+map('', 'J', 'mzJ`z', options)
+
+map('i', ',', ',<c-g>u', options)
+map('i', '.', '.<c-g>u', options)
+map('i', '!', '!<c-g>u', options)
+map('i', '?', '?<c-g>u', options)
+
+map('v', 'J', ':m \'>+1<CR>gv=gv', options)
+map('v', 'K', ':m \'<-2<CR>gv=gv', options)
+
+map('i', '<C-j>', '<esc>:m .+1<CR>==', options)
+map('i', '<C-k>', '<esc>:m .-2<CR>==', options)
+map('', '<leader>K', '<esc>:m .-2<CR>==', options)
+map('', '<leader>J', '<esc>:m .+1<CR>==', options)
