@@ -14,6 +14,7 @@ return require('packer').startup(function()
     use { 'neovim/nvim-lspconfig' }
     use { 'nvim-lua/completion-nvim' }
     use { 'hrsh7th/nvim-compe' }
+    use { 'kabouzeid/nvim-lspinstall' }
     use { 'jackguo380/vim-lsp-cxx-highlight' }
     use { 'cohama/lexima.vim' }
     use { 'glepnir/lspsaga.nvim' }
@@ -29,6 +30,8 @@ return require('packer').startup(function()
     use { 'jose-elias-alvarez/nvim-lsp-ts-utils' }
     use { 'octol/vim-cpp-enhanced-highlight' }
     use { 'vimwiki/vimwiki' }
+    use { 'OmniSharp/omnisharp-roslyn' }
+    --use { 'OmniSharp/omnisharp-vim' }
   
     -- Vim dispatch
     use { 'tpope/vim-dispatch' }

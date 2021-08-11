@@ -2,10 +2,38 @@ local nvim_lsp = require("lspconfig")
 local map = require("utils").map
 require("flutter-tools").setup{}
 require("lsp_signature").setup()
+<<<<<<< HEAD
 
 nvim_lsp.omnisharp.setup{}
+=======
+local function make_config()
+  local capabilities = vim.lsp.protocol.make_client_capabilities()
+  capabilities.textDocument.completion.completionItem.snippetSupport = true
+  return {
+    capabilities = capabilities,
+    on_attach = on_attach,
+  }
+end
+local function setup_servers()
+  require'lspinstall'.setup()
+
+  local servers = require'lspinstall'.installed_servers()
+
+  for _, server in pairs(servers) do
+    local config = make_config()
+    require'lspconfig'[server].setup(config)
+  end
+end
+setup_servers()
+
+>>>>>>> 51859439caffe90930c1a6692b9ba61cbb066193
 nvim_lsp.gopls.setup{}
 nvim_lsp.clangd.setup{}
+
+--nvim_lsp.omnisharp.setup{ 
+  --cmd = { "/Users/sdk/.local/share/nvim/lspinstall/csharp/omnisharp/run --languageserver" }
+--}
+vim.cmd("let g:OmniSharp_server_use_mono = 1")
 
 nvim_lsp.tsserver.setup{
     on_attach = function(client, bufnr)

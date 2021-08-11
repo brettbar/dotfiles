@@ -44,8 +44,13 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
+<<<<<<< HEAD
 local package_path_str = "/home/bbarinaga/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/bbarinaga/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/bbarinaga/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/bbarinaga/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
 local install_cpath_pattern = "/home/bbarinaga/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+=======
+local package_path_str = "/Users/sdk/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/sdk/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/sdk/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/sdk/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/sdk/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+>>>>>>> 51859439caffe90930c1a6692b9ba61cbb066193
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -71,6 +76,7 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["awesome-vim-colorschemes"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes"
   },
   ["completion-nvim"] = {
@@ -124,10 +130,78 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+=======
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes"
+  },
+  ["completion-nvim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/completion-nvim"
+  },
+  ["dart-vim-plugin"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/dart-vim-plugin"
+  },
+  ["flutter-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim"
+  },
+  ["lexima.vim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/lexima.vim"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
+  },
+  nerdcommenter = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nerdcommenter"
+  },
+  ["nlua.nvim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nlua.nvim"
+  },
+  ["nvim-compe"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-compe"
+  },
+  ["nvim-lsp-ts-utils"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-lsp-ts-utils"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-lspinstall"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+  },
+  ["omnisharp-roslyn"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/omnisharp-roslyn"
+  },
+  ["omnisharp-vim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/omnisharp-vim"
+>>>>>>> 51859439caffe90930c1a6692b9ba61cbb066193
   },
   ["packer.nvim"] = {
     loaded = false,
     needs_bufread = false,
+<<<<<<< HEAD
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/opt/packer.nvim"
   },
   ["plenary.nvim"] = {
@@ -221,6 +295,101 @@ _G.packer_plugins = {
   vimwiki = {
     loaded = true,
     path = "/home/bbarinaga/.local/share/nvim/site/pack/packer/start/vimwiki"
+=======
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/opt/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["resize.vim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/resize.vim"
+  },
+  ["telescope-symbols.nvim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/telescope-symbols.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  undotree = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/undotree"
+  },
+  ["vCoolor.vim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vCoolor.vim"
+  },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-airline"
+  },
+  ["vim-airline-themes"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-airline-themes"
+  },
+  ["vim-cpp-enhanced-highlight"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-cpp-enhanced-highlight"
+  },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-css-color"
+  },
+  ["vim-dispatch"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-dispatch"
+  },
+  ["vim-fahrenheit"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-fahrenheit"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-go"
+  },
+  ["vim-javascript"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-javascript"
+  },
+  ["vim-lsp-cxx-highlight"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-lsp-cxx-highlight"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-markdown"
+  },
+  ["vim-misc"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-misc"
+  },
+  ["vim-smoothie"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-smoothie"
+  },
+  ["vim-sublime-monokai"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vim-sublime-monokai"
+  },
+  vimdark = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vimdark"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/vimwiki"
+>>>>>>> 51859439caffe90930c1a6692b9ba61cbb066193
   }
 }
 
