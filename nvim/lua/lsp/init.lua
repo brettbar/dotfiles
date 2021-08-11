@@ -6,6 +6,8 @@ require("lsp_signature").setup()
 nvim_lsp.gopls.setup{}
 nvim_lsp.clangd.setup{}
 
+nvim_lsp.omnisharp.setup{ cmd = { "/Users/sdk/.cache/omnisharp-vim/omnisharp-roslyn/run", "--languageserver" } }
+
 nvim_lsp.tsserver.setup{
     on_attach = function(client, bufnr)
         -- disable tsserver formatting if you plan on formatting via null-ls

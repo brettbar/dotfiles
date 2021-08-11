@@ -28,6 +28,8 @@ return require('packer').startup(function()
     use { 'jose-elias-alvarez/nvim-lsp-ts-utils' }
     use { 'octol/vim-cpp-enhanced-highlight' }
     use { 'vimwiki/vimwiki' }
+    use { 'OmniSharp/omnisharp-roslyn' }
+    use { 'OmniSharp/omnisharp-vim' }
   
     -- Vim dispatch
     use { 'tpope/vim-dispatch' }
