@@ -117,6 +117,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
+  ["nvim-lspinstall"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
@@ -124,6 +128,14 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+  },
+  ["omnisharp-roslyn"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/omnisharp-roslyn"
+  },
+  ["omnisharp-vim"] = {
+    loaded = true,
+    path = "/Users/sdk/.local/share/nvim/site/pack/packer/start/omnisharp-vim"
   },
   ["packer.nvim"] = {
     loaded = false,
