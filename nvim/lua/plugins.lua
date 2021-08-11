@@ -17,6 +17,7 @@ return require('packer').startup(function()
     use { 'jackguo380/vim-lsp-cxx-highlight' }
     use { 'cohama/lexima.vim' }
     use { 'glepnir/lspsaga.nvim' }
+    use { 'OmniSharp/Omnisharp-vim' }
   
     -- Language plugins
     use { 'tjdevries/nlua.nvim' }
