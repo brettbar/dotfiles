@@ -14,17 +14,19 @@ background_opacity: 0.75
 font:
         size: 14
         normal:
-            family: Consolas NF #windows like
-            #family: JetBrainsMono Nerd Font Mono #jetbrains
-            #family: BitstreamVeraSansMono Nerd Font Mono #mac like
+          #family: Consolas NF #windows like
+          #family: JetBrainsMono Nerd Font Mono #jetbrains
+          #family: BitstreamVeraSansMono Nerd Font Mono #mac like
+          family: FiraCode Nerd Font Mono
                 
 colors:
   # Default colors
   primary:
-    #background: '0x262626'
-    background: '0x000000'
-    #background: '0x111111'
-    foreground: '0xB3B1AD'
+    #background: '#262626'
+    #background: '#470000'
+    background: '#111111'
+    #background: '#000000'
+    foreground: '#B3B1AD'
 
   normal:
     black: '#303030'
