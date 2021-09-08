@@ -51,7 +51,7 @@ return require('packer').startup(function()
     --use { 'preservim/nerdtree' }
 
 
-    use { 'ray-x/lsp_signature.nvim' }
+    --use { 'ray-x/lsp_signature.nvim' }
     use { 'mbbill/undotree' }
     use { 'ahonn/resize.vim' }
     use { 'psliwka/vim-smoothie' }
