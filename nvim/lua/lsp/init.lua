@@ -1,7 +1,7 @@
 local nvim_lsp = require("lspconfig")
 local map = require("utils").map
 require("flutter-tools").setup{}
-require("lsp_signature").setup()
+--require("lsp_signature").setup()
 
 nvim_lsp.omnisharp.setup{}
 local function make_config()
