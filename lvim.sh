@@ -1,4 +1,4 @@
 #!/bin/bash
 export GOOS=js
 export GOARCH=wasm
-nvim $1
+lvim $1

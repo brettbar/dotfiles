@@ -122,13 +122,24 @@ fi
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$GOROOT/bin:/opt/nvim/bin:/usr/local/bin/nvim/bin:/opt/flutter/bin:$PATH
+export PATH=$PATH:/usr/local/tinygo/bin
+export PATH=$PATH:$HOME/.local/bin
 
 alias f=fzf
-alias v=nvim
-alias nv=$HOME/dotfiles/nvim.sh
+alias v=lvim
+alias nv=$HOME/dotfiles/lvim.sh
 alias t=tmux
 alias tk='tmux kill-session'
 alias tka='tmux kill-server'
 alias ww="cd $GOROOT/src/github.com/Kochava/web-sdk-v3"
 alias maxbr="sudo brightnessctl set 100%"
+alias notes="lvim ~/notes"
+
+lock() {
+  i3lock
+}
+alias lock="lock"
+alias suspend="lock && systemctl suspend"
+alias sleep="lock && systemctl hibernate"
+
 force_color_prompt=yes
