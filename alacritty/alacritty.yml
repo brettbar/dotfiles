@@ -1,53 +1,53 @@
 env:
-    TERM: xterm-256color
+  TERM: xterm-256color
 
 window:
-        padding:
-                x: 4
-                y: 0
-        decorations: none
-        #dynamic_padding: true
+  padding:
+    x: 4
+    y: 0
+  decorations: none
+  #dynamic_padding: true
         
 
-background_opacity: 0.8
+# background_opacity: 0.8
 
 font:
-        size: 12
-        normal:
-          #family: Consolas NF #windows like
-          #family: JetBrainsMono Nerd Font Mono #jetbrains
-          #family: BitstreamVeraSansMono Nerd Font Mono #mac like
-          family: FiraCode Nerd Font Mono
-                
-colors:
-  # Default colors
-  primary:
-    #background: '#262626'
-    #background: '#470000'
-    #background: '#111111'
-    background: '#181818'
-    #background: '#000000'
-    foreground: '#B3B1AD'
-
+  size: 12
   normal:
-    black: '#303030'
-    red: '#D75F5F'
-    green: '#FFA155'
-    yellow: '#FF5555'
-    blue: '#875F5F'
-    magenta: '#C97E7E'
-    cyan:    '#9a413d'
-    white:   '#c6c6c6'
+    #family: Consolas NF #windows like
+    # family: JetBrainsMono Nerd Font Mono #jetbrains
+    #family: BitstreamVeraSansMono Nerd Font Mono #mac like
+    family: FiraCode Nerd Font Mono
 
-  bright:
-    black: '#303030'
-    red: '#D75F5F'
-    green: '#FFA155'
-    yellow: '#FF5555'
-    blue: '#875F5F'
-    magenta: '#C97E7E'
-    cyan:    '#9a413d'
-    white:   '#c6c6c6'
+schemes:
+ siena: &siena
+   primary:
+     foreground: '#B3B1AD'
+     background: '#222222'
+     #background: '#470000'
+     #background: '#111111'
+     #background: '#181818'
+     #background: '#000000'
+   normal:
+     black: '#303030'
+     red: '#D75F5F'
+     green: '#FFA155'
+     yellow: '#FF5555'
+     blue: '#875F5F'
+     magenta: '#C97E7E'
+     cyan:    '#9a413d'
+     white:   '#c6c6c6'
+
+   bright:
+     black: '#303030'
+     red: '#D75F5F'
+     green: '#FFA155'
+     yellow: '#FF5555'
+     blue: '#875F5F'
+     magenta: '#C97E7E'
+     cyan:    '#9a413d'
+     white:   '#c6c6c6'
+      
   # Normal colors
   #normal:
     #black:   '#303030'
@@ -70,3 +70,4 @@ colors:
     #cyan:    '#FFAAA0'
     #white:   '#FFFFFF'
 
+colors: *siena
