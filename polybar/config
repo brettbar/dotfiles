@@ -40,7 +40,9 @@
 ;alert = #bd2c40
 
 background = #BF111111
+;background = #222222
 background-alt = #BF303030
+;background-alt = #333333
 foreground = #B3B1AD
 foreground-alt = #555
 primary = #FFA155
@@ -66,8 +68,7 @@ line-color = #f00
 border-size = 0
 ;border-color = #00000000
 border-color = #303030
-;border-bottom = 4
-border-bottom = 2
+border-bottom = 4
 
 padding-left = 0
 padding-right = 2
