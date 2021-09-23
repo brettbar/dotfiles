@@ -124,6 +124,7 @@ lvim.plugins = {
   { "brettbar/siena.vim"},
   { "Raimondi/delimitMate" },
   { "godlygeek/tabular" },
+  { "ap/vim-css-color" },
   { "plasticboy/vim-markdown" }
 }
 
