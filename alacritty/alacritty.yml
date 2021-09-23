@@ -9,7 +9,7 @@ window:
   #dynamic_padding: true
         
 
-# background_opacity: 0.8
+#background_opacity: 0.8
 
 font:
   size: 12
@@ -23,7 +23,7 @@ schemes:
  siena: &siena
    primary:
      foreground: '#B3B1AD'
-     background: '#222222'
+     background: '#262626'
      #background: '#470000'
      #background: '#111111'
      #background: '#181818'

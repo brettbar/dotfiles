@@ -198,8 +198,10 @@ client.background       #2B2C2B
         #status_command i3status
 #}
 
-for_window [class=".*"] border pixel 4
-gaps inner 12
+# for_window [class=".*"] border pixel 4
+for_window [class=".*"] border pixel 2
+# gaps inner 12
+gaps inner 0
 gaps outer 0
 
 # swap caps lock and escape

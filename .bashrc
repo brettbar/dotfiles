@@ -124,6 +124,7 @@ export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$GOROOT/bin:/opt/nvim/bin:/usr/local/bin/nvim/bin:/opt/flutter/bin:$PATH
 export PATH=$PATH:/usr/local/tinygo/bin
 export PATH=$PATH:$HOME/.local/bin
+export PATH=~/.npm-global/bin:$PATH
 
 alias f=fzf
 alias v=lvim

@@ -123,7 +123,8 @@ lvim.plugins = {
   },
   { "brettbar/siena.vim"},
   { "Raimondi/delimitMate" },
-  { "vimwiki/vimwiki" }
+  { "godlygeek/tabular" },
+  { "plasticboy/vim-markdown" }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
