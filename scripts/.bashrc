@@ -127,7 +127,7 @@ export PATH=$PATH:$HOME/.local/bin
 
 alias f=fzf
 alias v=lvim
-alias nv=$HOME/dotfiles/lvim.sh
+alias nv=$HOME/scripts/lvim.sh
 alias t=tmux
 alias tk='tmux kill-session'
 alias tka='tmux kill-server'

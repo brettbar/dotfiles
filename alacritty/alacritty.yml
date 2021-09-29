@@ -5,7 +5,7 @@ window:
         padding:
                 x: 4
                 y: 0
-        decorations: none
+        # decorations: none
         #dynamic_padding: true
         
 
@@ -19,6 +19,36 @@ font:
           #family: BitstreamVeraSansMono Nerd Font Mono #mac like
           family: FiraCode Nerd Font Mono
                 
+      
+colors:
+  # Default colors
+  primary:
+    #background: '#262626'
+    #background: '#470000'
+    #background: '#111111'
+    #background: '#181818'
+    background: '#000000'
+    foreground: '#B3B1AD'
+
+  normal:
+    black: '#303030'
+    red: '#D75F5F'
+    green: '#FFA155'
+    yellow: '#FF5555'
+    blue: '#875F5F'
+    magenta: '#C97E7E'
+    cyan:    '#9a413d'
+    white:   '#c6c6c6'
+
+  bright:
+    black: '#303030'
+    red: '#D75F5F'
+    green: '#FFA155'
+    yellow: '#FF5555'
+    blue: '#875F5F'
+    magenta: '#C97E7E'
+    cyan:    '#9a413d'
+    white:   '#c6c6c6'
 #colors:
   #primary:
     #background: '#fafafa'
@@ -67,36 +97,6 @@ font:
     #magenta: '#ad7fa8'
     #cyan:    '#34e2e2'
     #white:   '#eeeeec'
-      
-colors:
-  # Default colors
-  primary:
-    background: '#262626'
-    #background: '#470000'
-    #background: '#111111'
-    #background: '#181818'
-    #background: '#000000'
-    foreground: '#B3B1AD'
-
-  normal:
-    black: '#303030'
-    red: '#D75F5F'
-    green: '#FFA155'
-    yellow: '#FF5555'
-    blue: '#875F5F'
-    magenta: '#C97E7E'
-    cyan:    '#9a413d'
-    white:   '#c6c6c6'
-
-  bright:
-    black: '#303030'
-    red: '#D75F5F'
-    green: '#FFA155'
-    yellow: '#FF5555'
-    blue: '#875F5F'
-    magenta: '#C97E7E'
-    cyan:    '#9a413d'
-    white:   '#c6c6c6'
 
   # Normal colors
   #normal:

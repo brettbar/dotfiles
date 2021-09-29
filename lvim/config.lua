@@ -13,6 +13,13 @@ lvim.log.level = "warn"
 lvim.format_on_save = false
 -- lvim.colorscheme = "onedarker"
 lvim.colorscheme = "siena"
+lvim.transparent_window=true
+lvim.autocommands.custom_groups = {
+  -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
+  {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
+  {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=#111111" },
+}
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
