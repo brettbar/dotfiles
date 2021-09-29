@@ -5,11 +5,11 @@ window:
         padding:
                 x: 4
                 y: 0
-        # decorations: none
+        #decorations: none
         #dynamic_padding: true
         
 
-# background_opacity: 0.8
+background_opacity: 0.8
 
 font:
         size: 12

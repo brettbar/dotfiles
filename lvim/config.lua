@@ -14,11 +14,15 @@ lvim.format_on_save = false
 -- lvim.colorscheme = "onedarker"
 lvim.colorscheme = "siena"
 lvim.transparent_window=true
+
 lvim.autocommands.custom_groups = {
   -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
   {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
-  {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=#111111" },
+  {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },
 }
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
@@ -132,7 +136,8 @@ lvim.plugins = {
   { "Raimondi/delimitMate" },
   { "godlygeek/tabular" },
   { "ap/vim-css-color" },
-  { "plasticboy/vim-markdown" }
+  { "plasticboy/vim-markdown" },
+  { "psliwka/vim-smoothie" }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
