@@ -197,9 +197,9 @@ client.background       #2B2C2B
 #}
 
 # for_window [class=".*"] border pixel 0
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 1
 #gaps inner 12
-gaps inner 0
+gaps inner 12
 gaps outer 0
 
 # swap caps lock and escape

@@ -1,0 +1,36 @@
+:root {
+  --default-font: 'FiraCode Nerd Font', serif !important;
+}
+.theme-dark {
+  --background-primary: #000000;
+  --background-primary-alt: #111111;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
+  --background-nav: #000000;
+  --background-nav-alt: #000000;
+  
+    --golden-brown: #ffa155;
+    --text-accent: #ffa155;
+    --text-accent-hover: #ffa155;
+    --text-normal: #B3B1AD;
+    --text-muted: #888;
+    --text-faint: #555;
+    --text-error: #ff3333;
+    --text-error-hover: #990000;
+    --text-highlight-bg: #dbaa205e;
+    --text-on-accent: #dcddde;
+    --interactive-normal: #2a2a2a;
+    --interactive-hover: #303030;
+    --interactive-accent: #ffa155;
+    --interactive-accent-hover: #ffa155;
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --text-nav-selected: #000000;
+    --interactive-accent-rgb: #ffa155;
+}
+
+.markdown-source-view {
+  /* font-family: 'FiraCode Nerd Font', serif !important; */
+  /* background: black; */
+}
