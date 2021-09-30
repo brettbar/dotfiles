@@ -67,8 +67,9 @@ line-color = #f00
 
 ;border-size = 4
 border-size = 0
-; border-color = #00000000
-border-color = #FFA155
+;border-color = #00000000
+border-color = #222222
+; border-color = #FFA155
 border-bottom = 1
 
 padding-left = 0

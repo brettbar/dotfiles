@@ -34,3 +34,20 @@
   /* font-family: 'FiraCode Nerd Font', serif !important; */
   /* background: black; */
 }
+
+/* .CodeMirror pre.CodeMirror-line { */
+/*   line-height: 1;/*height of a*/ */
+/*   padding-top: 6px; /*the lower part of height of b*/ */
+/*   padding-bottom: 6px;/*the upper part of height of b*/ */
+/* } */
+
+/* p{ */
+/*     line-height: 1.4; /* change this value accordingly */ */
+/*     display: block; */
+/*     padding-top: 6px;  /* change this value accordingly */ */
+/*     padding-bottom: 6px; /* change this value accordingly */ */
+/*     margin-block-start: 0em; */
+/*     margin-block-end: 0em; */
+/*     margin-inline-start: 0px; */
+/*     margin-inline-end: 0px; */
+/* } */
