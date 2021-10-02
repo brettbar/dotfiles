@@ -23,10 +23,10 @@ font:
 colors:
   # Default colors
   primary:
-    #background: '#262626'
-    #background: '#470000'
-    #background: '#111111'
-    #background: '#181818'
+    # background: '#262626'
+    # background: '#470000'
+    # background: '#111111'
+    # background: '#181818'
     background: '#000000'
     foreground: '#B3B1AD'
 

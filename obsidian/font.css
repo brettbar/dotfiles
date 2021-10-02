@@ -13,8 +13,10 @@
     --text-accent: #ffa155;
     --text-accent-hover: #ffa155;
     --text-normal: #B3B1AD;
-    --text-muted: #888;
-    --text-faint: #555;
+    /* --text-muted: #888; */
+    --text-muted: #ffa155;
+    /* --text-faint: #555; */
+    --text-faint: #ffa155;
     --text-error: #ff3333;
     --text-error-hover: #990000;
     --text-highlight-bg: #dbaa205e;
