@@ -20,9 +20,19 @@ lvim.autocommands.custom_groups = {
   {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
   {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi DiffAdd ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi DiffChange ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi DiffDelete ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi DiffText ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi diffAdded ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi diffChanged ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi diffFile ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi diffIndexLine ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi diffRemoved ctermbg=none guibg=none" },
 }
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
@@ -86,6 +96,7 @@ lvim.builtin.nvimtree.ignore = { "*.obj", "*.os", }
 lvim.builtin.treesitter.ensure_installed = "maintained"
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
+
 
 -- generic LSP settings
 -- you can set a custom on_attach function that will be used for all the language servers

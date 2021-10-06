@@ -124,6 +124,11 @@ export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$GOROOT/bin:/opt/nvim/bin:/usr/local/bin/nvim/bin:/opt/flutter/bin:$PATH
 export PATH=$PATH:/usr/local/tinygo/bin
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:/opt/godot/bin
+export PATH=$PATH:/opt/emsdk
+export PATH=$PATH:/opt/emsdk/node/14.15.5_64bit/bin
+export PATH=$PATH:/opt/emsdk/upstream/emscripten
+
 
 alias f=fzf
 alias v=lvim
