@@ -19,6 +19,7 @@ lvim.autocommands.custom_groups = {
   -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
   {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
+  {"ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
   {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
@@ -34,6 +35,9 @@ lvim.autocommands.custom_groups = {
   {"ColorScheme", "*", "hi diffIndexLine ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi diffRemoved ctermbg=none guibg=none" },
 }
+
+vim.cmd("set colorcolumn=80") 
+
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
