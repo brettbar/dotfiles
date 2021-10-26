@@ -13,18 +13,22 @@ lvim.log.level = "warn"
 lvim.format_on_save = false
 -- lvim.colorscheme = "onedarker"
 lvim.colorscheme = "siena"
-lvim.transparent_window=true
+-- lvim.transparent_window=true
 
 lvim.autocommands.custom_groups = {
-  -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
-  {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
-  {"ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
-  {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },
+  { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
+
+-- For total transparency
+  -- {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
+  -- {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
+  -- {"ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
+  -- {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
+  -- {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" },
+  -- {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
+  -- {"ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
+  -- {"ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },
+
+-- minimal git diffs
   {"ColorScheme", "*", "hi DiffAdd ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi DiffChange ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi DiffDelete ctermbg=none guibg=none" },
@@ -34,6 +38,14 @@ lvim.autocommands.custom_groups = {
   {"ColorScheme", "*", "hi diffFile ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi diffIndexLine ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi diffRemoved ctermbg=none guibg=none" },
+
+-- nvimtree customizations
+  {"ColorScheme", "*", "hi NvimTreeRootFolder guifg=#FFA150" },
+  {"ColorScheme", "*", "hi NvimTreeGitNew guifg=none" },
+  {"ColorScheme", "*", "hi NvimTreeGitDirty guifg=none" },
+  {"ColorScheme", "*", "hi NvimTreeFileDirty guifg=none" },
+  {"ColorScheme", "*", "hi NvimTreeFileNew guifg=none" },
+  {"ColorScheme", "*", "hi NvimTreeSpecialFile guifg=#FFA150" },
 }
 
 vim.cmd("set colorcolumn=80") 
