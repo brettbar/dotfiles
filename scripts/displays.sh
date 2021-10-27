@@ -9,4 +9,4 @@ sleep 1
 autorandr --change
 
 #feh --bg-fill /home/bbarinaga/Pictures/Wallpapers/955760.jpg
-feh --bg-fill /home/bbarinaga/Pictures/Wallpapers/bladerunner.jpg
+feh --bg-fill /home/bbarinaga/Pictures/Wallpapers/dune-2.jpg

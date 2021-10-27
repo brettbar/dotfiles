@@ -136,7 +136,7 @@ alias nv=$HOME/scripts/lvim.sh
 alias t=tmux
 alias tk='tmux kill-session'
 alias tka='tmux kill-server'
-alias ww="cd $GOROOT/src/github.com/Kochava/web-sdk-v3"
+alias ww="cd $HOME/work/v3-web-sdk"
 alias maxbr="sudo brightnessctl set 100%"
 alias notes="lvim ~/notes"
 

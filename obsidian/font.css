@@ -2,12 +2,12 @@
   --default-font: 'FiraCode Nerd Font', serif !important;
 }
 .theme-dark {
-  --background-primary: #000000;
-  --background-primary-alt: #111111;
-  --background-secondary: #000000;
-  --background-secondary-alt: #000000;
-  --background-nav: #000000;
-  --background-nav-alt: #000000;
+  --background-primary: #111111;
+  --background-primary-alt: #1c1c1c;
+  --background-secondary: #111111;
+  --background-secondary-alt: #111111;
+  --background-nav: #111111;
+  --background-nav-alt: #111111;
   
     --golden-brown: #ffa155;
     --text-accent: #ffa155;
@@ -28,7 +28,7 @@
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
     --scrollbar-bg: rgba(255, 255, 255, 0.05);
     --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
-    --text-nav-selected: #000000;
+    --text-nav-selected: #111111;
     --interactive-accent-rgb: #ffa155;
 }
 

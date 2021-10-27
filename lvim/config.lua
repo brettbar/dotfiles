@@ -13,20 +13,20 @@ lvim.log.level = "warn"
 lvim.format_on_save = false
 -- lvim.colorscheme = "onedarker"
 lvim.colorscheme = "siena"
--- lvim.transparent_window=true
+lvim.transparent_window=true
 
 lvim.autocommands.custom_groups = {
   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 
 -- For total transparency
   {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
-  -- {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
-  -- {"ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
-  -- {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
-  -- {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" },
-  -- {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
-  -- {"ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
-  -- {"ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
+  {"ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
+  {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },
 
 -- minimal git diffs
   {"ColorScheme", "*", "hi DiffAdd ctermbg=none guibg=none" },
@@ -162,10 +162,9 @@ lvim.plugins = {
   },
   { "brettbar/siena.vim"},
   { "Raimondi/delimitMate" },
-  { "godlygeek/tabular" },
   { "ap/vim-css-color" },
-  { "plasticboy/vim-markdown" },
-  { "psliwka/vim-smoothie" }
+  { "psliwka/vim-smoothie" },
+
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
