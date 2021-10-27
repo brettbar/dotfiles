@@ -19,7 +19,7 @@ lvim.autocommands.custom_groups = {
   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 
 -- For total transparency
-  -- {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
   -- {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
   -- {"ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
   -- {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
