@@ -198,8 +198,8 @@ client.background       #2B2C2B
 
 # for_window [class=".*"] border pixel 0
 for_window [class=".*"] border pixel 1
-gaps inner 12
-# gaps inner 0
+# gaps inner 12
+gaps inner 8
 gaps outer 0
 
 # swap caps lock and escape
@@ -214,9 +214,8 @@ exec_always ~/scripts/displays.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # thinkpad / work setup
-#workspace 1 output eDP-1
-#workspace 2 output DP-1-1
-#workspace 3 output DP-2
+workspace 1 output DP-1-1
+workspace 2 output DP-2
 
 # omen / home setup
 # workspace 2 output HDMI-0
@@ -225,6 +224,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # omen agon setup
 # workspace 2 output HDMI-0
-workspace 1 output DP-2 
+# workspace 1 output DP-2 
 # workspace 1 output eDP-1-0
 
