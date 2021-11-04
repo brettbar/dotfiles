@@ -10,13 +10,13 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save = false
+lvim.format_on_save = true
 -- lvim.colorscheme = "onedarker"
 lvim.colorscheme = "siena"
 lvim.transparent_window=true
 
 lvim.autocommands.custom_groups = {
-  { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
+  -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 
 -- For total transparency
   {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
@@ -152,7 +152,6 @@ lvim.builtin.treesitter.highlight.enabled = true
 --     exe = "flake8",
 --   }
 -- }
-
 -- Additional Plugins
 lvim.plugins = {
   {"folke/tokyonight.nvim"},
