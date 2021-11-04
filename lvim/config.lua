@@ -48,7 +48,10 @@ lvim.autocommands.custom_groups = {
   {"ColorScheme", "*", "hi NvimTreeSpecialFile guifg=#FFA150" },
 }
 
-vim.cmd("set colorcolumn=80") 
+-- vim.opt.autochdir=false
+
+vim.cmd("set colorcolumn=80")
+vim.cmd("set noautochdir")
 
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
