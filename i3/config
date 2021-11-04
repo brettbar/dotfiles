@@ -215,6 +215,7 @@ exec_always --no-startup-id xset r rate 300 50
   
 exec_always --no-startup-id picom -b --experimental-backends
 exec_always ~/scripts/displays.sh
+exec_always ~/scripts/wallpaper.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # thinkpad / work setup
