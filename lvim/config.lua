@@ -40,12 +40,12 @@ lvim.autocommands.custom_groups = {
   {"ColorScheme", "*", "hi diffRemoved ctermbg=none guibg=none" },
 
 -- nvimtree customizations
-  {"ColorScheme", "*", "hi NvimTreeRootFolder guifg=#FFA150" },
-  {"ColorScheme", "*", "hi NvimTreeGitNew guifg=none" },
-  {"ColorScheme", "*", "hi NvimTreeGitDirty guifg=none" },
-  {"ColorScheme", "*", "hi NvimTreeFileDirty guifg=none" },
-  {"ColorScheme", "*", "hi NvimTreeFileNew guifg=none" },
-  {"ColorScheme", "*", "hi NvimTreeSpecialFile guifg=#FFA150" },
+  -- {"ColorScheme", "*", "hi NvimTreeRootFolder guifg=#FFA150" },
+  -- {"ColorScheme", "*", "hi NvimTreeGitNew guifg=none" },
+  -- {"ColorScheme", "*", "hi NvimTreeGitDirty guifg=none" },
+  -- {"ColorScheme", "*", "hi NvimTreeFileDirty guifg=none" },
+  -- {"ColorScheme", "*", "hi NvimTreeFileNew guifg=none" },
+  -- {"ColorScheme", "*", "hi NvimTreeSpecialFile guifg=#FFA150" },
 }
 
 vim.opt.colorcolumn='80'
@@ -209,10 +209,11 @@ lvim.plugins = {
     },
   { "brettbar/siena.vim"},
   { "Raimondi/delimitMate" },
-  { "ryanoasis/vim-devicons" },
   { "ap/vim-css-color" },
   { "psliwka/vim-smoothie" },
   { "preservim/nerdtree" },
+  { "ryanoasis/vim-devicons" },
+  { "tiagofumo/vim-nerdtree-syntax-highlight" },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
