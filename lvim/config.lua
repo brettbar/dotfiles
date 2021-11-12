@@ -10,7 +10,7 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save = true
+lvim.format_on_save = false
 lvim.colorscheme = "siena"
 -- lvim.colorscheme = "onedarker"
 lvim.transparent_window=true
@@ -19,13 +19,14 @@ lvim.autocommands.custom_groups = {
   -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 
 -- For total transparency
-  {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
   {"ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
   {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" }, {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" }, 
+  {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },
+  {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
 
 -- minimal git diffs
   {"ColorScheme", "*", "hi DiffAdd ctermbg=none guibg=none" },
@@ -45,8 +46,32 @@ lvim.autocommands.custom_groups = {
   -- {"ColorScheme", "*", "hi NvimTreeFileDirty guifg=none" },
   -- {"ColorScheme", "*", "hi NvimTreeFileNew guifg=none" },
   -- {"ColorScheme", "*", "hi NvimTreeSpecialFile guifg=#FFA150" },
+  -- { "FileType", "nerdtree", "syntax match NERDTreeDirSlash #/$# containedin=NERDTreeDir conceal contained"}
 }
 
+vim.cmd("let g:NERDTreeSyntaxDisableDefaultExtensions = 1")
+vim.cmd("let g:NERDTreeSyntaxDisableDefaultExactMatches = 1")
+vim.cmd("let g:NERDTreeSyntaxDisableDefaultPatternMatches = 1")
+vim.cmd("let g:NERDTreeSyntaxEnabledExtensions = ["..
+  "\"rs\","..
+  "\"py\","..
+  "\"js\","..
+  "\"json\","..
+  "\"md\","..
+  "\"toml\","..
+  "\"html\","..
+  "\"css\","..
+  "\"cpp\","..
+  "\"hpp\","..
+  "\"h\","..
+  "\"c\","..
+  "\"ts\","..
+  "\"jsx\","..
+  "\"tsx\","..
+"]")
+vim.cmd("let NERDTreeHighlightCursorline = 0");
+
+vim.opt.updatetime = 4000
 vim.opt.colorcolumn='80'
 
 lvim.lsp.diagnostics.virtual_text = false
@@ -214,14 +239,5 @@ lvim.plugins = {
   { "ryanoasis/vim-devicons" },
   { "tiagofumo/vim-nerdtree-syntax-highlight" },
 }
-
-
--- Autocommands (https://neovim.io/doc/user/autocmd.html)
-lvim.autocommands.custom_groups = {
-  -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
-}
-
-
-
 
 
