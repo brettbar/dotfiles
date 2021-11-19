@@ -22,7 +22,7 @@ lvim.autocommands.custom_groups = {
   {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
   {"ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
   {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" }, 
+  {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
   {"ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },

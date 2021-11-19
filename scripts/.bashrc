@@ -134,6 +134,7 @@ alias f=fzf
 alias v=lvim
 alias nv=$HOME/scripts/lvim.sh
 alias t=tmux
+alias tweb='tmuxinator start v3-web-sdk'
 alias tk='tmux kill-session'
 alias tka='tmux kill-server'
 alias ww="cd $HOME/work/v3-web-sdk"
