@@ -2,12 +2,12 @@
   --default-font: 'FiraCode Nerd Font', serif !important;
 }
 .theme-dark {
-  --background-primary: #111111;
-  --background-primary-alt: #1c1c1c;
-  --background-secondary: #111111;
-  --background-secondary-alt: #111111;
-  --background-nav: #111111;
-  --background-nav-alt: #111111;
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  --background-secondary: #000000;
+  --background-secondary-alt: #000000;
+  --background-nav: #000000;
+  --background-nav-alt: #000000;
   
     --golden-brown: #ffa155;
     --text-accent: #ffa155;

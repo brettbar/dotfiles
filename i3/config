@@ -203,7 +203,7 @@ client.background       #2B2C2B
 # for_window [class=".*"] border pixel 0
 for_window [class=".*"] border pixel 4
 # gaps inner 12
-gaps inner 0
+gaps inner 12 
 gaps outer 0
 
 
@@ -228,9 +228,9 @@ exec_always --no-startup-id xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 
 exec_always --no-startup-id xset r rate 400 80
-  
 exec_always xfce4-power-manager &
-exec_always --no-startup-id picom -b --experimental-backends
+
 exec_always ~/scripts/displays.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id nitrogen --restore
+exec_always picom -b --experimental-backends

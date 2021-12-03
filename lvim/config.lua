@@ -80,6 +80,12 @@ lvim.lsp.diagnostics.virtual_text = false
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+-- lvim.keys.normal_mode["<M-t>"] = ":execute v:count . 'ToggleTerm'<CR>"
+lvim.builtin.terminal.open_mapping = [[<M-t>]]
+
+
+lvim.keys.normal_mode["<leader>e"] = ":NERDTreeToggle<CR>"
+
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
 -- edit a default keymapping
@@ -222,7 +228,6 @@ lvim.builtin.treesitter.highlight.enabled = true
 --   },
 -- }
 
-lvim.keys.normal_mode["<leader>e"] = ":NERDTreeToggle<CR>"
 
 -- Additional Plugins
 lvim.plugins = {
