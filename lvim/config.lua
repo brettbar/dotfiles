@@ -12,6 +12,7 @@ an executable
 lvim.log.level = "warn"
 lvim.format_on_save = false
 lvim.colorscheme = "siena"
+-- lvim.colorscheme = "darcula"
 -- lvim.colorscheme = "onedarker"
 lvim.transparent_window=true
 
@@ -85,6 +86,11 @@ lvim.builtin.terminal.open_mapping = [[<M-t>]]
 
 
 lvim.keys.normal_mode["<leader>e"] = ":NERDTreeToggle<CR>"
+
+lvim.keys.normal_mode["<leader>ff"] = ":Telescope find_files<CR>"
+lvim.keys.normal_mode["<leader>fg"] = ":Telescope live_grep<CR>"
+lvim.keys.normal_mode["<leader>fb"] = ":Telescope buffers<CR>"
+lvim.keys.normal_mode["<leader>fh"] = ":Telescope help_tags<CR>"
 
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
@@ -243,6 +249,7 @@ lvim.plugins = {
   { "preservim/nerdtree" },
   { "ryanoasis/vim-devicons" },
   { "tiagofumo/vim-nerdtree-syntax-highlight" },
+  { "doums/darcula" }
 }
 
 

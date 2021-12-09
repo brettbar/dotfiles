@@ -50,7 +50,7 @@ windows:
   - bash:
     - cd targets/web && clear
   - test:
-    - cd targets/web/test/headless && clear
+    - cd targets/web/headless-tests && clear
   - serv:
     - cd targets/web && clear && http-server .
   - kvinit:
