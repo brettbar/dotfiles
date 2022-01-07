@@ -50,7 +50,7 @@ windows:
   - bash:
     - cd targets/web && clear
   - test:
-    - cd targets/web/headless-tests && clear
+    - cd targets/web/tests && clear
   - serv:
     - docker-compose up --build -d
   - git:
