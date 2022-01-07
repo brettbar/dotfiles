@@ -41,36 +41,35 @@ lvim.autocommands.custom_groups = {
   {"ColorScheme", "*", "hi diffRemoved ctermbg=none guibg=none" },
 
 -- nvimtree customizations
-  -- {"ColorScheme", "*", "hi NvimTreeRootFolder guifg=#FFA150" },
-  -- {"ColorScheme", "*", "hi NvimTreeGitNew guifg=none" },
-  -- {"ColorScheme", "*", "hi NvimTreeGitDirty guifg=none" },
-  -- {"ColorScheme", "*", "hi NvimTreeFileDirty guifg=none" },
-  -- {"ColorScheme", "*", "hi NvimTreeFileNew guifg=none" },
-  -- {"ColorScheme", "*", "hi NvimTreeSpecialFile guifg=#FFA150" },
-  -- { "FileType", "nerdtree", "syntax match NERDTreeDirSlash #/$# containedin=NERDTreeDir conceal contained"}
+  {"ColorScheme", "*", "hi NvimTreeRootFolder guifg=#FFA150" },
+  {"ColorScheme", "*", "hi NvimTreeGitNew guifg=none" },
+  {"ColorScheme", "*", "hi NvimTreeGitDirty guifg=none" },
+  {"ColorScheme", "*", "hi NvimTreeFileDirty guifg=none" },
+  {"ColorScheme", "*", "hi NvimTreeFileNew guifg=none" },
+  {"ColorScheme", "*", "hi NvimTreeSpecialFile guifg=#FFA150" },
+  { "FileType", "nerdtree", "syntax match NERDTreeDirSlash #/$# containedin=NERDTreeDir conceal contained"}
 }
 
-vim.cmd("let g:NERDTreeSyntaxDisableDefaultExtensions = 1")
-vim.cmd("let g:NERDTreeSyntaxDisableDefaultExactMatches = 1")
-vim.cmd("let g:NERDTreeSyntaxDisableDefaultPatternMatches = 1")
-vim.cmd("let g:NERDTreeSyntaxEnabledExtensions = ["..
-  "\"rs\","..
-  "\"py\","..
-  "\"js\","..
-  "\"json\","..
-  "\"md\","..
-  "\"toml\","..
-  "\"html\","..
-  "\"css\","..
-  "\"cpp\","..
-  "\"hpp\","..
-  "\"h\","..
-  "\"c\","..
-  "\"ts\","..
-  "\"jsx\","..
-  "\"tsx\","..
-"]")
-vim.cmd("let NERDTreeHighlightCursorline = 0");
+-- vim.cmd("let g:NERDTreeSyntaxDisableDefaultExtensions = 1")
+-- vim.cmd("let g:NERDTreeSyntaxDisableDefaultExactMatches = 1")
+-- vim.cmd("let g:NERDTreeSyntaxDisableDefaultPatternMatches = 1")
+-- vim.cmd("let g:NERDTreeSyntaxEnabledExtensions = ["..
+--   "\"rs\",".. "\"py\","..
+--   "\"js\","..
+--   "\"json\","..
+--   "\"md\","..
+--   "\"toml\","..
+--   "\"html\","..
+--   "\"css\","..
+--   "\"cpp\","..
+--   "\"hpp\","..
+--   "\"h\","..
+--   "\"c\","..
+--   "\"ts\","..
+--   "\"jsx\","..
+--   "\"tsx\","..
+-- "]")
+-- vim.cmd("let NERDTreeHighlightCursorline = 0");
 
 vim.opt.updatetime = 4000
 vim.opt.colorcolumn='80'
@@ -85,12 +84,13 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.builtin.terminal.open_mapping = [[<M-t>]]
 
 
-lvim.keys.normal_mode["<leader>e"] = ":NERDTreeToggle<CR>"
+-- lvim.keys.normal_mode["<leader>e"] = ":NERDTreeToggle<CR>"
 
 lvim.keys.normal_mode["<leader>ff"] = ":Telescope find_files<CR>"
 lvim.keys.normal_mode["<leader>fg"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<leader>fb"] = ":Telescope buffers<CR>"
 lvim.keys.normal_mode["<leader>fh"] = ":Telescope help_tags<CR>"
+
 
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
@@ -132,19 +132,22 @@ lvim.keys.normal_mode["<leader>fh"] = ":Telescope help_tags<CR>"
 lvim.builtin.dashboard.active = true
 lvim.builtin.terminal.active = true
 
-lvim.builtin.nvimtree.active = false
--- lvim.builtin.nvimtree.setup.update_focused_file = {
---   enable = true,
---   update_cwd = true,
---   ignore_list = {},
--- }
--- lvim.builtin.nvimtree.setup.update_to_buf_dir = {
---   enable = false,
---   auto_open = false,
--- }
--- lvim.builtin.nvimtree.setup.view.side = "left"
--- lvim.builtin.nvimtree.show_icons.git = 0
--- lvim.builtin.nvimtree.ignore = { "*.obj", "*.os", }
+lvim.builtin.telescope.active = true
+lvim.builtin.telescope.defaults.file_ignore_patterns = { ".git", "node_modules" }
+
+-- lvim.builtin.nvimtree.active = false
+lvim.builtin.nvimtree.setup.update_focused_file = {
+  enable = false,
+  update_cwd = false,
+  ignore_list = {},
+}
+lvim.builtin.nvimtree.setup.update_to_buf_dir = {
+  enable = false,
+  auto_open = false,
+}
+lvim.builtin.nvimtree.setup.view.side = "left"
+lvim.builtin.nvimtree.show_icons.git = 0
+lvim.builtin.nvimtree.ignore = { "*.obj", "*.os", }
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -243,13 +246,12 @@ lvim.plugins = {
       cmd = "TroubleToggle",
     },
   { "brettbar/siena.vim"},
-  { "Raimondi/delimitMate" },
+  -- { "Raimondi/delimitMate" },
   { "ap/vim-css-color" },
   { "psliwka/vim-smoothie" },
-  { "preservim/nerdtree" },
-  { "ryanoasis/vim-devicons" },
-  { "tiagofumo/vim-nerdtree-syntax-highlight" },
-  { "doums/darcula" }
+  -- { "preservim/nerdtree" },
+  -- { "ryanoasis/vim-devicons" },
+  -- { "tiagofumo/vim-nerdtree-syntax-highlight" },
 }
 
 
