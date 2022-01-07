@@ -133,7 +133,13 @@ lvim.builtin.dashboard.active = true
 lvim.builtin.terminal.active = true
 
 lvim.builtin.telescope.active = true
-lvim.builtin.telescope.defaults.file_ignore_patterns = { ".git", "node_modules" }
+lvim.builtin.telescope.defaults.file_ignore_patterns = {
+  ".git",
+  "node_modules",
+  "build",
+  "cmake-build-debug",
+  "assets",
+}
 
 -- lvim.builtin.nvimtree.active = false
 lvim.builtin.nvimtree.setup.update_focused_file = {
