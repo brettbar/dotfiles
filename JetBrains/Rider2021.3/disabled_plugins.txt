@@ -1,2 +1,0 @@
-com.jetbrains.dotCover
-com.jetbrains.dotTrace
