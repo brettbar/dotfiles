@@ -1,0 +1,32 @@
+<application>
+  <component name="DimensionService">
+    <size key="GridCell.Tab.0.left.0.0.2560.1600" width="2462" height="490" />
+    <size key="GridCell.Tab.0.center.0.0.2560.1600" width="2462" height="490" />
+    <size key="GridCell.Tab.0.right.0.0.2560.1600" width="2462" height="490" />
+    <size key="GridCell.Tab.0.bottom.0.0.2560.1600" width="2462" height="490" />
+  </component>
+  <component name="WindowManager">
+    <frame x="3010" y="165" width="1900" height="1233" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="1089" y="391" width="424" height="483" key="FileChooserDialogImpl" timestamp="1639702474069">
+      <screen x="52" y="0" width="2508" height="1600" />
+    </state>
+    <state x="1089" y="391" width="424" height="483" key="FileChooserDialogImpl/52.0.2508.1600/2560.847.1920.1080" timestamp="1639702474069" />
+    <state x="3868" y="800" width="2128" height="1584" key="WELCOME_SCREEN" timestamp="1643827680260">
+      <screen x="2560" y="0" width="2560" height="1600" />
+    </state>
+    <state x="3868" y="800" width="2128" height="1584" key="WELCOME_SCREEN/2560.0.2560.1600/5120.659.1920.1080/0.0.2560.1600" timestamp="1643827680260" />
+    <state x="1306" y="633" width="800" height="600" key="WELCOME_SCREEN/52.0.2508.1600/2560.847.1920.1080" timestamp="1639702463769" />
+    <state x="2043" y="800" width="1015" height="1584" key="WELCOME_SCREEN/56.0.2504.1600/2560.441.1920.1080" timestamp="1643239460844" />
+    <state x="1308" y="633" width="800" height="600" key="WELCOME_SCREEN/56.0.2504.1600/2560.847.1920.1080" timestamp="1639776779463" />
+  </component>
+</application>

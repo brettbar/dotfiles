@@ -16,13 +16,17 @@
     <size key="GridCell.Tab.3.center.0.0.2560.1600" width="1811" height="600" />
     <size key="GridCell.Tab.3.right.0.0.2560.1600" width="1811" height="600" />
     <size key="GridCell.Tab.3.bottom.0.0.2560.1600" width="1811" height="600" />
-    <size key="GridCell.Tab.0.left.2560.0.2560.1600" width="2481" height="420" />
-    <size key="GridCell.Tab.0.center.2560.0.2560.1600" width="2481" height="420" />
-    <size key="GridCell.Tab.0.right.2560.0.2560.1600" width="2481" height="420" />
-    <size key="GridCell.Tab.0.bottom.2560.0.2560.1600" width="2481" height="420" />
+    <size key="GridCell.Tab.0.left.2560.0.2560.1600" width="944" height="1032" />
+    <size key="GridCell.Tab.0.center.2560.0.2560.1600" width="944" height="1032" />
+    <size key="GridCell.Tab.0.right.2560.0.2560.1600" width="944" height="1032" />
+    <size key="GridCell.Tab.0.bottom.2560.0.2560.1600" width="944" height="1032" />
+    <size key="GridCell.Tab.0.left.5120.659.1920.1080" width="1920" height="1052" />
+    <size key="GridCell.Tab.0.center.5120.659.1920.1080" width="1920" height="1052" />
+    <size key="GridCell.Tab.0.right.5120.659.1920.1080" width="1920" height="1052" />
+    <size key="GridCell.Tab.0.bottom.5120.659.1920.1080" width="1920" height="1052" />
   </component>
   <component name="WindowManager">
-    <frame x="64" y="8" width="1524" height="1584" />
+    <frame x="2804" y="8" width="2128" height="1584" extendedState="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
