@@ -49,9 +49,9 @@ windows:
     - lvim
   - bash:
     - cd targets/web && clear
-  - test:
-    - cd targets/web/tests && clear
-  - serv:
+  - jest:
+    - cd test/jest && clear
+  - dock:
     - docker-compose up --build -d
   - git:
     - git status

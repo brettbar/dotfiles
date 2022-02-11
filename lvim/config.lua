@@ -22,6 +22,16 @@ lvim.transparent_window=true
 lvim.leader = "space"
 
 -- add your own keymapping
+
+-- unmap a default keymapping
+-- lvim.keys.normal_mode["<C-Up>"] = false
+lvim.keys.normal_mode["<S-l>"] = false
+lvim.keys.normal_mode["<S-h>"] = false
+lvim.keys.normal_mode["<S-h>"] = false
+lvim.keys.normal_mode["<leader>e"] = false
+-- edit a default keymapping
+-- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
+
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.builtin.terminal.open_mapping = [[<M-t>]]
 
@@ -30,11 +40,15 @@ lvim.keys.normal_mode["<leader>fg"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<leader>fb"] = ":Telescope buffers<CR>"
 lvim.keys.normal_mode["<leader>fh"] = ":Telescope help_tags<CR>"
 
+lvim.keys.normal_mode["<M-e>"] = ":NvimTreeToggle<CR>"
+lvim.keys.normal_mode["<C-j>"] = "<C-W><C-J>"
+lvim.keys.normal_mode["<C-k>"] = "<C-W><C-K>"
+lvim.keys.normal_mode["<C-l>"] = "<C-W><C-L>"
+lvim.keys.normal_mode["<C-h>"] = "<C-W><C-H>"
+lvim.keys.normal_mode["<C-w>"] = "<Cmd>BufferClose!<CR>"
+lvim.keys.normal_mode["<M-l>"] = "<Cmd>BufferNext<CR>"
+lvim.keys.normal_mode["<M-h>"] = "<Cmd>BufferPrevious<CR>"
 
--- unmap a default keymapping
--- lvim.keys.normal_mode["<C-Up>"] = false
--- edit a default keymapping
--- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- we use protected-mode (pcall) just in case the plugin wasn't loaded yet.
@@ -161,7 +175,11 @@ lvim.builtin.telescope.defaults.file_ignore_patterns = {
 
 -- Additional Plugins
 lvim.plugins = {
-  { "brettbar/siena.vim"},
+  { "brettbar/siena.vim",
+    "psliwka/vim-smoothie",
+   -- "ellisonleao/gruvbox.nvim",
+    "morhetz/gruvbox",
+  },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
