@@ -124,15 +124,23 @@ export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$GOROOT/bin:/opt/nvim/bin:/usr/local/bin/nvim/bin:/opt/flutter/bin:$PATH
 export PATH=$PATH:/usr/local/tinygo/bin
 export PATH=$PATH:$HOME/.local/bin
-export PATH=~/.npm-global/bin:$PATH
+export PATH=$PATH:/opt/godot/bin
+export PATH=$PATH:/opt/emsdk
+export PATH=$PATH:/opt/emsdk/node/14.15.5_64bit/bin
+export PATH=$PATH:/opt/emsdk/upstream/emscripten
+
 
 alias f=fzf
 alias v=lvim
-alias nv=$HOME/dotfiles/lvim.sh
+alias nv=$HOME/scripts/lvim.sh
 alias t=tmux
+alias tw='tmuxinator start v3-web-sdk'
+alias tg='tmuxinator start game'
 alias tk='tmux kill-session'
 alias tka='tmux kill-server'
-alias ww="cd $GOROOT/src/github.com/Kochava/web-sdk-v3"
+alias ww="cd $HOME/work/v3-web-sdk"
+alias gg="cd $HOME/personal/game"
+
 alias maxbr="sudo brightnessctl set 100%"
 alias notes="lvim ~/notes"
 
@@ -144,3 +152,7 @@ alias suspend="lock && systemctl suspend"
 alias sleep="lock && systemctl hibernate"
 
 force_color_prompt=yes
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
