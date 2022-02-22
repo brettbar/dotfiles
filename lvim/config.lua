@@ -9,46 +9,33 @@ an executable
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
 -- general
-vim.opt.updatetime = 4000
-vim.opt.colorcolumn='80'
-vim.cmd("set noautochdir")
-
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "siena"
-lvim.transparent_window=true
+lvim.transparent_window = true
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
-
 -- add your own keymapping
-
--- unmap a default keymapping
--- lvim.keys.normal_mode["<C-Up>"] = false
-lvim.keys.normal_mode["<S-l>"] = false
-lvim.keys.normal_mode["<S-h>"] = false
-lvim.keys.normal_mode["<S-h>"] = false
-lvim.keys.normal_mode["<leader>e"] = false
--- edit a default keymapping
--- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
-
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.builtin.terminal.open_mapping = [[<M-t>]]
-
 lvim.keys.normal_mode["<leader>ff"] = ":Telescope find_files<CR>"
 lvim.keys.normal_mode["<leader>fg"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<leader>fb"] = ":Telescope buffers<CR>"
 lvim.keys.normal_mode["<leader>fh"] = ":Telescope help_tags<CR>"
-
 lvim.keys.normal_mode["<M-e>"] = ":NvimTreeToggle<CR>"
 lvim.keys.normal_mode["<C-j>"] = "<C-W><C-J>"
 lvim.keys.normal_mode["<C-k>"] = "<C-W><C-K>"
 lvim.keys.normal_mode["<C-l>"] = "<C-W><C-L>"
 lvim.keys.normal_mode["<C-h>"] = "<C-W><C-H>"
 lvim.keys.normal_mode["<C-w>"] = "<Cmd>BufferClose!<CR>"
-lvim.keys.normal_mode["<M-l>"] = "<Cmd>BufferNext<CR>"
-lvim.keys.normal_mode["<M-h>"] = "<Cmd>BufferPrevious<CR>"
+lvim.keys.normal_mode["<S-l>"] = "<Cmd>BufferNext<CR>"
+lvim.keys.normal_mode["<S-h>"] = "<Cmd>BufferPrevious<CR>"
 
+-- unmap a default keymapping
+-- lvim.keys.normal_mode["<C-Up>"] = false
+-- edit a default keymapping
+-- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- we use protected-mode (pcall) just in case the plugin wasn't loaded yet.
@@ -74,7 +61,9 @@ lvim.keys.normal_mode["<M-h>"] = "<Cmd>BufferPrevious<CR>"
 --   name = "+Trouble",
 --   r = { "<cmd>Trouble lsp_references<cr>", "References" },
 --   f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
---   d = { "<cmd>Trouble lsp_document_diagnostics<cr>", "Diagnostics" }, q = { "<cmd>Trouble quickfix<cr>", "QuickFix" }, l = { "<cmd>Trouble loclist<cr>", "LocationList" },
+--   d = { "<cmd>Trouble lsp_document_diagnostics<cr>", "Diagnostics" },
+--   q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
+--   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
 --   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
 -- }
 
@@ -83,12 +72,9 @@ lvim.keys.normal_mode["<M-h>"] = "<Cmd>BufferPrevious<CR>"
 lvim.builtin.dashboard.active = true
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
-lvim.builtin.nvimtree.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.project.manual_mode = true
--- lvim.builtin.nvimtree.setup.update_cwd = 0
--- lvim.builtin.nvimtree.setup.respect_buf_cwd = 0
 lvim.builtin.nvimtree.show_icons.git = 0
+lvim.builtin.project.manual_mode = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -99,6 +85,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "lua",
   "python",
   "typescript",
+  "tsx",
   "css",
   "rust",
   "java",
@@ -107,7 +94,6 @@ lvim.builtin.treesitter.ensure_installed = {
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
-
 lvim.builtin.telescope.defaults.file_ignore_patterns = {
   ".git",
   "node_modules",
@@ -156,22 +142,23 @@ lvim.builtin.telescope.defaults.file_ignore_patterns = {
 -- }
 
 -- -- set additional linters
--- local linters = require "lvim.lsp.null-ls.linters"
--- linters.setup {
---   { command = "flake8", filetypes = { "python" } },
---   {
---     -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
---     command = "shellcheck",
---     ---@usage arguments to pass to the formatter
---     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
---     extra_args = { "--severity", "warning" },
---   },
---   {
---     command = "codespell",
---     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
---     filetypes = { "javascript", "python" },
---   },
--- }
+local linters = require "lvim.lsp.null-ls.linters"
+linters.setup {
+  -- { command = "flake8", filetypes = { "python" } },
+  -- {
+  --   -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
+  --   command = "shellcheck",
+  --   ---@usage arguments to pass to the formatter
+  --   -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
+  --   extra_args = { "--severity", "warning" },
+  -- },
+  -- {
+  --   command = "codespell",
+  --   ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+  --   filetypes = { "javascript", "python" },
+  -- },
+{ command = "eslint", filetypes = {"typescript", "javascript"}}
+}
 
 -- Additional Plugins
 lvim.plugins = {
@@ -183,7 +170,6 @@ lvim.plugins = {
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
-
 lvim.autocommands.custom_groups = {
   -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 

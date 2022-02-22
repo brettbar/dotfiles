@@ -48,7 +48,7 @@ windows:
   - lvim:
     - lvim
   - bash:
-    - cd targets/web && clear
+    - clear
   - jest:
     - cd test/jest && clear
   - dock:
