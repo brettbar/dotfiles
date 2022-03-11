@@ -49,10 +49,10 @@ windows:
     - lvim
   - bash:
     - clear
-  - jest:
-    - cd test/jest && clear
-  - dock:
-    - docker-compose up --build -d
+  - unit:
+    - cd test/unit && clear
+  - react:
+    - cd test/react && clear
   - git:
     - git status
   # - serv:
