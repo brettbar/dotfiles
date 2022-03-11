@@ -195,6 +195,7 @@ lvim.autocommands.custom_groups = {
   {"ColorScheme", "*", "hi diffRemoved ctermbg=none guibg=none" },
 
 -- nvimtree customizations
+  {"ColorScheme", "*", "hi NvimTreeFolderIcon guifg=#d75f5f" },
   -- {"ColorScheme", "*", "hi NvimTreeRootFolder guifg=#FFA150" },
   -- {"ColorScheme", "*", "hi NvimTreeGitNew guifg=none" },
   -- {"ColorScheme", "*", "hi NvimTreeGitDirty guifg=none" },
