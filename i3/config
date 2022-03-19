@@ -29,6 +29,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+exec_always ~/.screenlayout/home.sh
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -37,16 +39,18 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 
-# focus_follows_mouse no
+focus_follows_mouse no
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+a exec i3-sensible-terminal
+bindsym $mod+a exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
+
+bindsym $mod+b exec brave-browser
 
 # start dmenu (a program launcher)
 #bindsym $mod+Return exec --no-startup-id dmenu_run
@@ -178,8 +182,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+b exec vieb &
-
 #bindsym $mod+Escape exec betterlockscreen -l dimblur
 bindsym $mod+Escape exec i3lock -c 222222
 
@@ -196,10 +198,12 @@ client.background       #2B2C2B
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar {
-#         position top
-#         status_command i3status
-# }
+bar {
+        position top
+        status_command i3status
+}
+
+for_window [class="FieldsOfMars"] floating enable
 
 # for_window [class=".*"] border pixel 0
 for_window [class=".*"] border pixel 4
@@ -214,8 +218,8 @@ gaps outer 0
 # workspace 2 output DP-2
 
 # omen / home setup
-workspace 1 output DP-2
-workspace 2 output HDMI-0
+workspace 2 output DP-2
+workspace 1 output HDMI-0
 workspace 5 output eDP-1-0
 
 # omen agon setup
@@ -232,8 +236,7 @@ exec_always --no-startup-id xset r rate 400 80
 exec_always xfce4-power-manager &
 
 # exec_always ~/scripts/displays.sh
-exec_always ~/.config/polybar/launch.sh
+#exec_always ~/.config/polybar/launch.sh
 exec_always picom -b --experimental-backends
-exec_always autorandr --change
-exec_always sleep .5
+exec_always sleep 2
 exec_always nitrogen --restore
