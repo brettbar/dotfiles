@@ -19,18 +19,15 @@ lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.builtin.terminal.open_mapping = [[<M-t>]]
-lvim.keys.normal_mode["<leader>ff"] = ":Telescope find_files<CR>"
-lvim.keys.normal_mode["<leader>fg"] = ":Telescope live_grep<CR>"
-lvim.keys.normal_mode["<leader>fb"] = ":Telescope buffers<CR>"
-lvim.keys.normal_mode["<leader>fh"] = ":Telescope help_tags<CR>"
 lvim.keys.normal_mode["<M-e>"] = ":NvimTreeToggle<CR>"
 lvim.keys.normal_mode["<C-j>"] = "<C-W><C-J>"
 lvim.keys.normal_mode["<C-k>"] = "<C-W><C-K>"
 lvim.keys.normal_mode["<C-l>"] = "<C-W><C-L>"
 lvim.keys.normal_mode["<C-h>"] = "<C-W><C-H>"
-lvim.keys.normal_mode["<C-w>"] = "<Cmd>BufferClose!<CR>"
-lvim.keys.normal_mode["<S-l>"] = "<Cmd>BufferNext<CR>"
-lvim.keys.normal_mode["<S-h>"] = "<Cmd>BufferPrevious<CR>"
+
+vim.opt.colorcolumn = "80"
+vim.cmd(":set nofixendofline");
+vim.opt.clipboard = "unnamedplus"
 
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = false
@@ -69,7 +66,6 @@ lvim.keys.normal_mode["<S-h>"] = "<Cmd>BufferPrevious<CR>"
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.dashboard.active = true
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"

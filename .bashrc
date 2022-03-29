@@ -128,6 +128,7 @@ export PATH=$PATH:/opt/godot/bin
 export PATH=$PATH:/opt/emsdk
 export PATH=$PATH:/opt/emsdk/node/14.15.5_64bit/bin
 export PATH=$PATH:/opt/emsdk/upstream/emscripten
+export PATH=$PATH:/home/brettbar/.cargo/bin
 
 
 alias f=fzf
@@ -150,9 +151,11 @@ lock() {
 alias lock="lock"
 alias suspend="lock && systemctl suspend"
 alias sleep="lock && systemctl hibernate"
+alias bt="bluetoothctl"
 
 force_color_prompt=yes
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. "$HOME/.cargo/env"
