@@ -237,6 +237,6 @@ exec_always xfce4-power-manager &
 
 # exec_always ~/scripts/displays.sh
 #exec_always ~/.config/polybar/launch.sh
+exec_always feh --bg-fill ~/nextcloud/pictures/Wallpapers/4k/'download (5).jpeg'
 exec_always picom -b --experimental-backends
 exec_always sleep 2
-exec_always nitrogen --restore

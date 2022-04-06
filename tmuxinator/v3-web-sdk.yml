@@ -51,8 +51,13 @@ windows:
     - clear
   - unit:
     - cd test/unit && clear
+    - npm run start
   - react:
     - cd test/react && clear
+    - npm run start
+  - www:
+    - cd test/www && clear
+    - npm run start
   - git:
     - git status
   # - serv:
