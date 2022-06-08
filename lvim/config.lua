@@ -13,6 +13,9 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "siena"
 lvim.transparent_window = true
+-- lvim.colorscheme = "gruvbox"
+-- vim.opt.background = "light"
+
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -153,14 +156,14 @@ linters.setup {
   --   ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
   --   filetypes = { "javascript", "python" },
   -- },
-{ command = "eslint", filetypes = {"typescript", "javascript"}}
+  { command = "eslint", filetypes = { "typescript", "javascript" } }
 }
 
 -- Additional Plugins
 lvim.plugins = {
   { "brettbar/siena.vim",
     "psliwka/vim-smoothie",
-   -- "ellisonleao/gruvbox.nvim",
+    -- "ellisonleao/gruvbox.nvim",
     "morhetz/gruvbox",
   },
 }
@@ -169,29 +172,29 @@ lvim.plugins = {
 lvim.autocommands.custom_groups = {
   -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 
--- For total transparency
-  {"ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
-  {"ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
-  {"ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
+  -- For total transparency
+  -- { "ColorScheme", "*", "hi CursorLine ctermbg=none guibg=#111111" },
+  -- { "ColorScheme", "*", "hi ColorColumn ctermbg=none guibg=#111111" },
+  { "ColorScheme", "*", "hi StatusLine ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi StatusLineNC ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi TabLine ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi TabLineFill ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi TabLineSel ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi LineNr ctermbg=none guibg=none" },
 
--- minimal git diffs
-  {"ColorScheme", "*", "hi DiffAdd ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi DiffChange ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi DiffDelete ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi DiffText ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi diffAdded ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi diffChanged ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi diffFile ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi diffIndexLine ctermbg=none guibg=none" },
-  {"ColorScheme", "*", "hi diffRemoved ctermbg=none guibg=none" },
+  -- minimal git diffs
+  { "ColorScheme", "*", "hi DiffAdd ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi DiffChange ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi DiffDelete ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi DiffText ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi diffAdded ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi diffChanged ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi diffFile ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi diffIndexLine ctermbg=none guibg=none" },
+  { "ColorScheme", "*", "hi diffRemoved ctermbg=none guibg=none" },
 
--- nvimtree customizations
-  {"ColorScheme", "*", "hi NvimTreeFolderIcon guifg=#d75f5f" },
+  -- nvimtree customizations
+  { "ColorScheme", "*", "hi NvimTreeFolderIcon guifg=#d75f5f" },
   -- {"ColorScheme", "*", "hi NvimTreeRootFolder guifg=#FFA150" },
   -- {"ColorScheme", "*", "hi NvimTreeGitNew guifg=none" },
   -- {"ColorScheme", "*", "hi NvimTreeGitDirty guifg=none" },
