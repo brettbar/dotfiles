@@ -1,0 +1,22 @@
+inherits = "ayu_dark"
+
+"ui.background" = {}
+"info" = { fg = "roma_red", modifiers = ["bold"] }
+"hint" = { fg = "roma_red", modifiers = ["bold"] }
+"diagnostic.hint" = { underline = { color = "roma_red", style="curl"} }
+"diagnostic.info"= { underline = { color = "roma_red", style="curl"} }
+"ui.statusline.normal" = { fg = "black", bg = "roma_red" }
+"ui.statusline" = {}
+"markup.link.url" = "roma_red"
+
+"namespace" = "yellow"
+"type" = "roma_red"
+"type.builtin" = "roma_red"
+
+"constant" = "red"
+"keyword.control" = "orange"
+"function" = "yellow"
+
+[palette]
+roma_red = "#ff595f"
+
